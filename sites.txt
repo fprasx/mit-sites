@@ -1,0 +1,5 @@
+whereis
+eecs
+web
+courseroad
+fireroad
