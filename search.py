@@ -1,6 +1,4 @@
-from dataclasses import dataclass
 from typing import Set
-from bs4 import BeautifulSoup as bs
 from requests_html import HTMLSession
 from urllib.parse import urlsplit
 import pprint
