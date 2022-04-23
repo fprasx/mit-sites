@@ -5,7 +5,7 @@ from time import time as unix_time
 import argparse
 
 # CLI Args
-MAX_DEPTH = 20
+MAX_DEPTH = 10
 DBG = False
 SAVE = True
 
@@ -75,8 +75,7 @@ if __name__ == '__main__':
     roots = [f'https://{i}.mit.edu' for i in ['eecs', 'biology', 'web', 'physics', 'be', 'math']]
     links = set()
     for root in roots:
-        new = set()
-        s = scan(root, new, 0, session)
+        s = scan(root, links, 0, session)
         links = links.union(s)
     with open(f'out/depth-{MAX_DEPTH}-{"-".join(get_id(root) for root in roots)}-{round(unix_time())}.txt', 'x') as f:
         for i in s:
