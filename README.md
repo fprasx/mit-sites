@@ -1,6 +1,8 @@
 # mit-sites
 
-A little bundle of python files that finds sites ending in .mit.edu.
+Finding sites ending in .mit.edu. Why? uhh
+
+Well, we're at *227* so far.
 
 # Method
 
