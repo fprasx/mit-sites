@@ -68,6 +68,7 @@ diversity
 d-lab
 dmse
 doingwell
+drupalcloud
 dsl
 dslx
 dspace
@@ -231,6 +232,7 @@ urop
 wayf
 wearablebiotech.media
 web
+websis
 whereis
 wi
 wikis
