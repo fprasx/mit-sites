@@ -1,0 +1,4 @@
+# want to upload this folder, just not the contents
+*
+*/
+!.gitignore
