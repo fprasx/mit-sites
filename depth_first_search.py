@@ -68,15 +68,17 @@ if __name__ == '__main__':
     MAX_DEPTH = args.depth
     SAVE = args.no_save
     DBG = args.debug
-
+    root = 'https://people.csail.mit.edu'
     session = HTMLSession()
-    root = 'https://web.mit.edu'
-    s = scan(root, set(), 0, session)
-    roots = [f'https://{i}.mit.edu' for i in ['eecs', 'biology', 'web', 'physics', 'be', 'math']]
-    links = set()
+    # Retrieve links that have already been found
+    found = set()
+    with open('sites.txt', 'r') as file:
+        for i in file.readlines():
+            found.add('https://' + i.strip() + '.mit.edu')
+    roots = [f'https://{i}.mit.edu' for i in ['courses.csail', 'stellar', 'isquared']]
     for root in roots:
-        s = scan(root, links, 0, session)
-        links = links.union(s)
+        s = scan(root, found, 0, session)
+        found = found.union(s)
     with open(f'out/depth-{MAX_DEPTH}-{"-".join(get_id(root) for root in roots)}-{round(unix_time())}.txt', 'x') as f:
         for i in s:
             f.write(f'{get_id(i)}\n')
