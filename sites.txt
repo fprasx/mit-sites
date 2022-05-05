@@ -108,6 +108,7 @@ housing
 hr
 hst
 humanitiesfilmoffice
+icampus
 iceo
 idhr
 idm
