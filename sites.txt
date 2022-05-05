@@ -59,7 +59,6 @@ covidapps
 covidpass
 covidvaccine
 crc
-d-lab
 dailypass.wi
 daper
 datatalks
@@ -67,6 +66,7 @@ deiactionplan
 digitalcredentials
 directory.wi
 diversity
+d-lab
 dmse
 doingwell
 drupalcloud
@@ -162,6 +162,7 @@ mitsloan
 mlkscholars
 mobi
 mta
+mycard
 myconcierge
 nanousers
 news
@@ -210,6 +211,7 @@ seii
 sense
 sfs
 shass
+shimmer.csail
 smallbusiness.ll
 socialmediahub
 spectrum
