@@ -103,6 +103,7 @@ giving
 glasslab
 gradadmissions
 gsc
+hacks
 handbook
 housing
 hr
@@ -186,6 +187,7 @@ openlearning-dev
 openlearning-intranet
 orgchart
 outofframe
+owa.exchange
 ovc
 physicaleducationandwellness
 picker
@@ -242,6 +244,7 @@ urop
 wayf
 wearablebiotech.media
 web
+webmail
 websis
 whereis
 wi
