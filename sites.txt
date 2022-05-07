@@ -59,6 +59,7 @@ covidapps
 covidpass
 covidvaccine
 crc
+d-lab
 dailypass.wi
 daper
 datatalks
@@ -66,7 +67,6 @@ deiactionplan
 digitalcredentials
 directory.wi
 diversity
-d-lab
 dmse
 doingwell
 drupalcloud
@@ -87,6 +87,7 @@ elo
 elx
 emergency
 ems
+engage
 engineering
 environmentalsolutions
 esi
@@ -187,8 +188,8 @@ openlearning-dev
 openlearning-intranet
 orgchart
 outofframe
-owa.exchange
 ovc
+owa.exchange
 physicaleducationandwellness
 picker
 picower
