@@ -2,7 +2,7 @@
 
 Finding sites ending in .mit.edu. Why? uhh
 
-Run `cat out/* sites.txt | sort -u -o sites.txt ` to aggregate all sites found
+Run `cat out/* sites.txt | sort -u -o sites.txt` to aggregate all sites found
 from `sites.txt` and `out/*` into sites.txt. There could be some sites that only
 appeared in some runs or some that were manually added to `sites.txt`.
 
