@@ -81,7 +81,7 @@ if __name__ == '__main__':
     for root in roots:
         s = scan(root, found, 0, session)
         found = found.union(s)
-    with open(f'out/depth-{MAX_DEPTH}-{"-".join(get_id(root) for root in roots)}-{round(unix_time())}.txt', 'x') as f:
+    with open(f'out/depth-{MAX_DEPTH}-{round(unix_time())}.txt', 'x') as f:
         for i in s:
             f.write(f'{get_id(i)}\n')
     for i in s:
