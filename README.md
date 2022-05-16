@@ -2,16 +2,11 @@
 
 Finding sites ending in .mit.edu. Why? uhh
 
-Well, we're at **252** so far.
+Run `cat out/* sites.txt | sort -u -o sites.txt` to aggregate all sites found
+from `sites.txt` and `out/*` into sites.txt. There could be some sites that only
+appeared in some runs or some that were manually added to `sites.txt`.
 
-Run `cat out/* sites.txt | sort -u -o sites.txt ` to aggregate all sites found
-into `sites.txt` (There could bes some sites added manually, so we can't just use the results of the searches)
-
-# Method
-
-We use Depth-first search and Breadth-first search (TODO).
-
-## DFS
+## Depth-first Search
 
 We go to a webpage, finding all the links on that page. Then, for each link on
 that page, we repeat the process of finding all the links on that page and
@@ -19,6 +14,19 @@ descending one level. We do this with a recursive function. If we have already
 seen a link, we skip it and go onto the next link to avoid doing the same work
 multiple times.
 
-## BFS
+## CLI options for `depth_first_search.py`
+```
+usage: depth_first_search.py [-h] [-d DEPTH] [--debug] [--no-save]
 
-TODO
+Process arguments for depth-first search
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -d DEPTH, --depth DEPTH
+                        how deep the search goes, note, larger values will take longer
+  --debug               print debug output
+  --no-save             don't save output to file
+```
+
+## Dependencies
+* requests_html
