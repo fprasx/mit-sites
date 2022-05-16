@@ -2,6 +2,7 @@
 accessibility
 act
 adminconnect
+admitted
 aeroastro
 ai2.appinventor
 aieducation
