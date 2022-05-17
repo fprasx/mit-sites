@@ -1,5 +1,7 @@
+1962.alumclass
 3down
 aba
+abd
 accessibility
 act
 adminconnect
@@ -141,6 +143,7 @@ innovation
 innovationone
 inside.ki
 institute-events
+intake
 integrity
 intramurals
 ir
@@ -166,6 +169,7 @@ lids
 listart
 listart-r1
 lit
+lms.mitx
 madmec
 mailman
 math
@@ -201,6 +205,7 @@ nanousers
 news
 newsoffice
 newyork.alumclub
+norway.alumclub
 now
 ocw
 odge
@@ -243,6 +248,7 @@ sailing
 sandbox
 sap
 scheduling
+scholvin.scripts
 science
 sdm
 sdm-idm
@@ -284,6 +290,7 @@ uaap
 upop
 upop-portal
 urop
+vpf
 wayf
 wearablebiotech.media
 web
@@ -302,4 +309,6 @@ www.eecs
 www.ll
 www.media
 www.mtl
+www.outofframe
 www.wi
+yangtan
