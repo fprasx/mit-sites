@@ -4,6 +4,7 @@ aba
 abd
 accessibility
 act
+adminappsts
 adminconnect
 admitted
 aeroastro
@@ -22,6 +23,7 @@ appinventor
 applymitsloan
 arch-fac-site.scripts
 architecture
+architecture-dev
 archivesspace
 arts
 ask
@@ -35,6 +37,7 @@ bglata.alumgroup
 biology
 blueprintlabs
 boston.alumclub
+buying
 ca
 calendar
 canvas
@@ -57,11 +60,13 @@ climateprimer
 clubsports
 cmsw
 code.appinventor
+cognet
 commencement
 commitments
 comms
 community.appinventor
 computing
+concur
 conformabledecoders.media
 coolthink.appinventor
 copytech
@@ -75,8 +80,10 @@ d-lab
 dailypass.wi
 daper
 datatalks
+dei.mitpress
 deiactionplan
 digitalcredentials
+direct
 directory.wi
 diversity
 dmse
@@ -143,6 +150,7 @@ innovation
 innovationone
 inside.ki
 institute-events
+insurance
 intake
 integrity
 intramurals
@@ -152,6 +160,7 @@ isquared
 ist
 kavfellow
 kb
+kfg
 ki
 ki-sbc
 lbgtq
@@ -190,6 +199,8 @@ mitcre
 mitili
 mitmuseum
 mitnano
+mitpress
+mitpressbookstore
 mitsloan
 mitx
 mlkscholars
@@ -205,6 +216,7 @@ nanousers
 news
 newsoffice
 newyork.alumclub
+nimbus-1
 norway.alumclub
 now
 ocw
@@ -281,11 +293,13 @@ superurop
 superurop-apply
 synbio
 teachremote
+thereader.mitpress
 timeline.ll
 tll
 toc.csail
 tpp
 tsailaboratory
+u2ap.scripts
 uaap
 upop
 upop-portal
