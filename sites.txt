@@ -28,6 +28,7 @@ archivesspace
 arts
 ask
 atlas
+baker
 bcs
 be
 be-it
@@ -49,6 +50,7 @@ catalog
 catalog-dev
 catalog-help
 cau
+ccity
 cee
 chancellor
 chemistry
@@ -82,6 +84,7 @@ daper
 datatalks
 dei.mitpress
 deiactionplan
+deiarts
 digitalcredentials
 direct
 directory.wi
@@ -95,6 +98,7 @@ dspace
 duo
 dusp
 eapsweb
+ec
 economics
 edgerton
 eduapps
@@ -143,6 +147,7 @@ idhr
 idm
 idp
 idss
+ihq
 ilp
 imes
 imit
@@ -179,9 +184,14 @@ listart
 listart-r1
 lit
 lms.mitx
+macgregor
 madmec
 mailman
+maseeh
 math
+mccdesk
+mccormick
+mcctechhelp
 mcgovern
 meche
 meche-ad-portal
@@ -214,9 +224,12 @@ mycard
 myconcierge
 nanolms
 nanousers
+newhouse
 news
 newsoffice
+newvassar
 newyork.alumclub
+next
 nimbus-1
 norway.alumclub
 now
@@ -228,6 +241,7 @@ oeop
 officer179
 officesdirectory
 oge
+oge-dev
 ombudsoffice
 ome
 omeintranet
@@ -250,6 +264,7 @@ policies
 polisci
 prepared
 president
+professional
 prolearn
 raise
 referencepubs
@@ -274,6 +289,7 @@ sfs
 shass
 shimmer.csail
 shop.sloanreview
+simmons
 slevi1
 sloanreview
 smallbusiness.ll
@@ -301,10 +317,12 @@ toc.csail
 tpp
 tsailaboratory
 u2ap.scripts
+ua-sustain
 uaap
 upop
 upop-portal
 urop
+voxel
 vpf
 wayf
 wearablebiotech.media
@@ -317,6 +335,7 @@ wikis
 wl
 www
 www-mtl
+www.ccity
 www.crc
 www.csail
 www.designx
@@ -326,4 +345,5 @@ www.media
 www.mtl
 www.outofframe
 www.wi
+wwww
 yangtan
