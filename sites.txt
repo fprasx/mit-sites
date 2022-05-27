@@ -196,6 +196,7 @@ misti
 mitaaa.alumgroup
 mitcommlab
 mitcre
+mitguidetoresidences
 mitili
 mitmuseum
 mitnano
