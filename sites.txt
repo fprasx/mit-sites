@@ -1,6 +1,5 @@
 1962.alumclass
 3down
-aba
 abd
 accessibility
 act
