@@ -8,6 +8,7 @@ adminappsts
 adminconnect
 admitted
 aeroastro
+afrotc
 ai2.appinventor
 aieducation
 aipolicyforum
@@ -142,6 +143,7 @@ humanitiesfilmoffice
 icampus
 icampusprize
 iceo
+idcard
 ide
 idhr
 idm
