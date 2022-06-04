@@ -1,4 +1,5 @@
 1962.alumclass
+1973.alumclass
 3down
 abd
 accessibility
@@ -21,6 +22,7 @@ amita.alumgroup
 appathon.appinventor
 appinventor
 applymitsloan
+appserver.appinventor
 arch-fac-site.scripts
 architecture
 architecture-dev
@@ -36,6 +38,7 @@ betterworld
 bgala.alumgroup
 bglata.alumgroup
 biology
+biomakers
 blueprintlabs
 boston.alumclub
 buying
@@ -52,6 +55,7 @@ catalog-help
 cau
 ccity
 cee
+cehs
 chancellor
 chemistry
 ci
@@ -77,6 +81,7 @@ courses.csail
 covidapps
 covidpass
 covidvaccine
+cpcm
 crc
 d-lab
 dailypass.wi
@@ -91,6 +96,7 @@ directory.wi
 diversity
 dmse
 doingwell
+dome
 drupalcloud
 dsl
 dslx
@@ -129,6 +135,7 @@ gamit
 gecd
 gelp
 giving
+giving-r1
 glasslab
 gradadmissions
 graduatehousing
@@ -271,6 +278,7 @@ raise
 referencepubs
 registrar
 registration
+reports
 resources
 rpa3
 sailing
@@ -295,6 +303,7 @@ slevi1
 sloanreview
 smallbusiness.ll
 socialmediahub
+southtexas.alumclub
 spectrum
 spouses
 ssp
@@ -325,6 +334,7 @@ upop-portal
 urop
 voxel
 vpf
+washingtondc.alumclub
 wayf
 wearablebiotech.media
 web

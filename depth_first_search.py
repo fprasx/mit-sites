@@ -72,12 +72,12 @@ if __name__ == '__main__':
     session = HTMLSession()
     # Retrieve links that have already been found
     found = set()
-    roots = []
-    with open('sites.txt', 'r') as file:
-        for i in file.readlines():
-            found.add('https://' + i.strip() + '.mit.edu')
-            # Use all previously found sites as roots
-            roots.append('https://' + i.strip() + '.mit.edu')
+    roots = ["https://libraries.mit.edu"]
+    # with open('sites.txt', 'r') as file:
+    #     for i in file.readlines():
+    #         found.add('https://' + i.strip() + '.mit.edu')
+    #         # Use all previously found sites as roots
+    #         roots.append('https://' + i.strip() + '.mit.edu')
     for root in roots:
         s = scan(root, found, 0, session)
         found = found.union(s)
