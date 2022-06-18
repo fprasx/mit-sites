@@ -9,10 +9,12 @@ adminconnect
 admitted
 aeroastro
 afrotc
+agelab
 ai2.appinventor
 aieducation
 aipolicyforum
 airpolicyforum
+allanore
 alum
 alumniadvisors
 alumnxpride.alumgroup
@@ -30,6 +32,7 @@ archivesspace
 arts
 ask
 atlas
+awards
 baker
 bcs
 be
@@ -44,6 +47,7 @@ boston.alumclub
 buying
 ca
 calendar
+calendar.csail
 canvas
 cap.csail
 capd
@@ -125,7 +129,9 @@ esi
 events
 exec
 executive
+facts
 facultygovernance
+fast-code.csail
 fellowsearch.wi
 fireroad
 firstyear
@@ -171,6 +177,7 @@ ir
 iso
 isquared
 ist
+jadbabaie
 kavfellow
 kb
 kfg
@@ -228,6 +235,7 @@ mta
 mtlresume
 mtlsites
 mtlweb
+museum
 mycard
 myconcierge
 nanolms
@@ -270,6 +278,7 @@ pkgcenter
 police
 policies
 polisci
+polishclub
 prepared
 president
 professional
@@ -300,6 +309,7 @@ shimmer.csail
 shop.sloanreview
 simmons
 slevi1
+sloannewyork.alumclub
 sloanreview
 smallbusiness.ll
 socialmediahub
@@ -346,6 +356,7 @@ wikis
 wl
 www
 www-mtl
+www.blackhistory
 www.ccity
 www.crc
 www.csail
@@ -355,6 +366,7 @@ www.ll
 www.media
 www.mtl
 www.outofframe
+www.web
 www.wi
 wwww
 yangtan
