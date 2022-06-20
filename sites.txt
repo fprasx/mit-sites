@@ -31,6 +31,7 @@ architecture-dev
 archivesspace
 arts
 ask
+assassin
 atlas
 awards
 baker
@@ -114,7 +115,9 @@ edgerton
 eduapps
 eecs
 eecseduportal
+eecsgsa
 eecsis
+eecsrefs
 ehs
 elo
 elx
@@ -148,6 +151,7 @@ graduatehousing
 gsc
 hacks
 handbook
+hkn
 housing
 hr
 hst
@@ -161,6 +165,7 @@ idhr
 idm
 idp
 idss
+ieee.scripts
 ihq
 ilp
 imes
@@ -183,6 +188,7 @@ kb
 kfg
 ki
 ki-sbc
+larch-www.lcs
 lbgtq
 lcau
 lce
@@ -197,6 +203,7 @@ libraries
 lids
 listart
 listart-r1
+lists.csail
 lit
 lms.mitx
 macgregor
@@ -271,6 +278,7 @@ orgchart
 outofframe
 ovc
 owa.exchange
+pdos.csail
 physicaleducationandwellness
 picker
 picower
@@ -282,6 +290,7 @@ polishclub
 prepared
 president
 professional
+projects.csail
 prolearn
 raise
 referencepubs
@@ -308,11 +317,13 @@ shass
 shimmer.csail
 shop.sloanreview
 simmons
+sipb
 slevi1
 sloannewyork.alumclub
 sloanreview
 smallbusiness.ll
 socialmediahub
+solar-cars.scripts
 southtexas.alumclub
 spectrum
 spouses
@@ -326,6 +337,7 @@ studentjobs
 studentlife
 studyabroad
 summerapp
+supertech
 superurop
 superurop-apply
 synbio
@@ -354,6 +366,7 @@ whereis
 wi
 wikis
 wl
+womenineecs
 www
 www-mtl
 www.blackhistory
