@@ -52,6 +52,7 @@ calendar.csail
 canvas
 cap.csail
 capd
+capecod.alumclub
 careers
 careers.ll
 catalog
@@ -88,6 +89,7 @@ covidpass
 covidvaccine
 cpcm
 crc
+ctl
 d-lab
 dailypass.wi
 daper
@@ -95,6 +97,7 @@ datatalks
 dei.mitpress
 deiactionplan
 deiarts
+delawarevalley.alumclub
 digitalcredentials
 direct
 directory.wi
@@ -187,6 +190,8 @@ kavfellow
 kb
 kfg
 ki
+ki-galleries
+ki-images
 ki-sbc
 larch-www.lcs
 lbgtq
@@ -298,6 +303,7 @@ registrar
 registration
 reports
 resources
+rhodeisland.alumclub
 rpa3
 sailing
 sandbox
@@ -318,6 +324,7 @@ shimmer.csail
 shop.sloanreview
 simmons
 sipb
+skiing
 slevi1
 sloannewyork.alumclub
 sloanreview
