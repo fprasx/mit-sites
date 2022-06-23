@@ -7,3 +7,6 @@ authors = ["Felix Prasanna <fpx@mit.edu>"]
 [dependencies]
 reqwest = { version = "0.11", features = ["json"] }
 tokio = { version = "1", features = ["full"] }
+scraper = "0.13.0"
+url = "2.2.2"
+# crossbeam-queue = "0.3.5" # for later if we multithread
