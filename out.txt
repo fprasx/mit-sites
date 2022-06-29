@@ -1,0 +1,337 @@
+warning: field is never read: `unsecure`
+  --> src/lib.rs:12:5
+   |
+12 |     unsecure: Client,
+   |     ^^^^^^^^^^^^^^^^
+   |
+   = note: `#[warn(dead_code)]` on by default
+
+warning: `seeker` (lib) generated 1 warning
+    Finished dev [unoptimized + debuginfo] target(s) in 0.09s
+     Running `target/debug/seeker`
+[2022-06-29T01:54:30Z INFO  seeker] Beginning search on https://mit.edu/
+[2022-06-29T01:54:33Z WARN  seeker]     Detected redirect: https://mit.edu/ -> https://web.mit.edu/
+[2022-06-29T01:54:33Z INFO  seeker]     Found 27 links
+[2022-06-29T01:54:33Z INFO  seeker] Beginning search on https://web.mit.edu/visitmit
+[2022-06-29T01:54:34Z INFO  seeker]     Found 40 links
+[2022-06-29T01:54:34Z INFO  seeker] Beginning search on http://arts.mit.edu/events-visit/galleries/wiesner-student-art-gallery/
+[2022-06-29T01:54:36Z INFO  seeker]     Found 62 links
+[2022-06-29T01:54:36Z INFO  seeker] Beginning search on https://arts.mit.edu/wp-admin/post.php
+[2022-06-29T01:54:40Z INFO  seeker]     Found 3 links
+[2022-06-29T01:54:40Z INFO  seeker] Beginning search on https://arts.mit.edu/wp-login.php
+[2022-06-29T01:54:40Z INFO  seeker]     Found 3 links
+[2022-06-29T01:54:40Z INFO  seeker] Beginning search on https://arts.mit.edu/privacy-policy/
+[2022-06-29T01:54:41Z INFO  seeker]     Found 63 links
+[2022-06-29T01:54:41Z INFO  seeker] Beginning search on https://policies-procedures.mit.edu/privacy-and-disclosure-personal-information
+[2022-06-29T01:54:45Z WARN  seeker]     Detected redirect: https://policies-procedures.mit.edu/privacy-and-disclosure-personal-information -> https://policies.mit.edu/policies-procedures
+[2022-06-29T01:54:45Z INFO  seeker]     Found 121 links
+[2022-06-29T01:54:45Z INFO  seeker] Beginning search on https://policies.mit.edu/policies-procedures/140-research-policies-and-public-and-private-support/146-private-support
+[2022-06-29T01:54:46Z INFO  seeker]     Found 121 links
+[2022-06-29T01:54:46Z INFO  seeker] Beginning search on https://policies.mit.edu/policies-procedures/120-relations-public-use-mit-name-and-facilities-use/122-office-vice-president
+[2022-06-29T01:54:46Z INFO  seeker]     Found 121 links
+[2022-06-29T01:54:46Z INFO  seeker] Beginning search on https://policies.mit.edu/employment-policy-manual
+[2022-06-29T01:54:47Z INFO  seeker]     Found 96 links
+[2022-06-29T01:54:47Z INFO  seeker] Beginning search on https://policies.mit.edu/employment-policy-manual/20-hiring-policies/23-temporary-or-regular-placement-individuals-through
+[2022-06-29T01:54:47Z INFO  seeker]     Found 96 links
+[2022-06-29T01:54:47Z INFO  seeker] Beginning search on http://hrweb.mit.edu/staffing-services/mitemps
+[2022-06-29T01:54:53Z WARN  seeker]     Detected redirect: http://hrweb.mit.edu/staffing-services/mitemps -> https://hr.mit.edu/managers/hiring/temp
+[2022-06-29T01:54:54Z INFO  seeker]     Found 56 links
+[2022-06-29T01:54:54Z INFO  seeker] Beginning search on https://hr.mit.edu/worklife
+[2022-06-29T01:54:55Z INFO  seeker]     Found 51 links
+[2022-06-29T01:54:55Z INFO  seeker] Beginning search on https://hr.mit.edu/worklife/seminars/personal-well-being
+[2022-06-29T01:54:57Z INFO  seeker]     Found 47 links
+[2022-06-29T01:54:57Z INFO  seeker] Beginning search on https://hr.mit.edu/worklife/seminars/personal-wellbeing
+[2022-06-29T01:54:58Z INFO  seeker]     Found 47 links
+[2022-06-29T01:54:58Z INFO  seeker] Beginning search on https://hr.mit.edu/worklife/backup-adult-care-program
+[2022-06-29T01:55:00Z INFO  seeker]     Found 53 links
+[2022-06-29T01:55:00Z INFO  seeker] Beginning search on https://hr.mit.edu/employee-leaves/overview
+[2022-06-29T01:55:02Z INFO  seeker]     Found 61 links
+[2022-06-29T01:55:02Z INFO  seeker] Beginning search on https://hr.mit.edu/employee-leaves
+[2022-06-29T01:55:03Z INFO  seeker]     Found 57 links
+[2022-06-29T01:55:03Z INFO  seeker] Beginning search on https://hr.mit.edu/worklife/seminars/Young-Professionals
+[2022-06-29T01:55:04Z INFO  seeker]     Found 49 links
+[2022-06-29T01:55:04Z INFO  seeker] Beginning search on http://research.mit.edu/
+[2022-06-29T01:55:07Z INFO  seeker]     Found 131 links
+[2022-06-29T01:55:07Z INFO  seeker] Beginning search on https://research.mit.edu/research-policies-and-procedures/proposal-preparation-and-review/guidelines-fellowship-proposals-0
+[2022-06-29T01:55:07Z INFO  seeker]     Found 124 links
+[2022-06-29T01:55:07Z INFO  seeker] Beginning search on https://postdocs.mit.edu/
+[2022-06-29T01:55:09Z INFO  seeker]     Found 52 links
+[2022-06-29T01:55:09Z INFO  seeker] Beginning search on https://postdocs.mit.edu/guide-administrators-mit-staff-only
+[2022-06-29T01:55:09Z INFO  seeker]     Found 53 links
+[2022-06-29T01:55:09Z INFO  seeker] Beginning search on https://postdocs.mit.edu/guide-administrators-mit-staff-only/going-support
+[2022-06-29T01:55:09Z INFO  seeker]     Found 48 links
+[2022-06-29T01:55:09Z INFO  seeker] Beginning search on https://postdocs.mit.edu/saml_login
+[2022-06-29T01:55:11Z WARN  seeker]     Detected redirect: https://postdocs.mit.edu/saml_login -> https://idp.mit.edu/idp/profile/SAML2/Redirect/SSO?execution=e1s1
+[2022-06-29T01:55:11Z INFO  seeker]     Found 3 links
+[2022-06-29T01:55:11Z INFO  seeker] Beginning search on https://idp.mit.edu/help.html
+[2022-06-29T01:55:11Z INFO  seeker]     Found 10 links
+[2022-06-29T01:55:11Z INFO  seeker] Beginning search on http://web.mit.edu/kerberos/
+[2022-06-29T01:55:13Z INFO  seeker]     Found 22 links
+[2022-06-29T01:55:13Z INFO  seeker] Beginning search on http://web.mit.edu/kerberos/krb5-1.20/
+[2022-06-29T01:55:13Z INFO  seeker]     Found 8 links
+[2022-06-29T01:55:13Z INFO  seeker] Beginning search on http://web.mit.edu/kerberos/krb5-1.20/doc/index.html
+[2022-06-29T01:55:13Z INFO  seeker]     Found 15 links
+[2022-06-29T01:55:13Z INFO  seeker] Beginning search on http://web.mit.edu/kerberos/krb5-1.20/doc/resources.html
+[2022-06-29T01:55:13Z INFO  seeker]     Found 20 links
+[2022-06-29T01:55:13Z INFO  seeker] Beginning search on https://mailman.mit.edu/pipermail/krbdev/
+[2022-06-29T01:55:15Z INFO  seeker]     Found 1227 links
+[2022-06-29T01:55:15Z INFO  seeker] Beginning search on https://mailman.mit.edu/pipermail/krbdev/2016-September/thread.html
+[2022-06-29T01:55:16Z INFO  seeker]     Found 34 links
+[2022-06-29T01:55:16Z INFO  seeker] Beginning search on https://mailman.mit.edu/pipermail/krbdev/2016-September/012659.html
+[2022-06-29T01:55:16Z INFO  seeker]     Found 7 links
+[2022-06-29T01:55:16Z INFO  seeker] Beginning search on https://mailman.mit.edu/pipermail/krbdev/2016-September/012653.html
+[2022-06-29T01:55:16Z INFO  seeker]     Found 7 links
+[2022-06-29T01:55:16Z INFO  seeker] Beginning search on https://mailman.mit.edu/pipermail/krbdev/2016-September/012658.html
+[2022-06-29T01:55:17Z INFO  seeker]     Found 8 links
+[2022-06-29T01:55:17Z INFO  seeker] Beginning search on http://mailman.mit.edu/pipermail/krbdev/attachments/20160902/2ab091a7/attachment.bin
+[2022-06-29T01:55:17Z INFO  seeker]     Found 0 links
+[2022-06-29T01:55:17Z INFO  seeker] Beginning search on https://mailman.mit.edu/pipermail/krbdev/2016-September/012664.html
+[2022-06-29T01:55:17Z INFO  seeker]     Found 7 links
+[2022-06-29T01:55:17Z INFO  seeker] Beginning search on https://mailman.mit.edu/pipermail/krbdev/2016-September/012670.html
+[2022-06-29T01:55:18Z INFO  seeker]     Found 11 links
+[2022-06-29T01:55:18Z INFO  seeker] Beginning search on http://web.mit.edu/kerberos/krb5-1.13/
+[2022-06-29T01:55:18Z INFO  seeker]     Found 9 links
+[2022-06-29T01:55:18Z INFO  seeker] Beginning search on http://web.mit.edu/kerberos/krb5-1.13/README-1.13.7.txt
+[2022-06-29T01:55:19Z INFO  seeker]     Found 0 links
+[2022-06-29T01:55:19Z INFO  seeker] Beginning search on http://krbdev.mit.edu/rt/NoAuth/krb5-1.13/bugs-1.13.7.html
+[2022-06-29T01:55:21Z INFO  seeker]     Found 23 links
+[2022-06-29T01:55:21Z INFO  seeker] Beginning search on https://krbdev.mit.edu/rt/Search/Results.html
+[2022-06-29T01:55:21Z INFO  seeker]     Found 17 links
+[2022-06-29T01:55:21Z INFO  seeker] Beginning search on https://krbdev.mit.edu/rt/Prefs/DashboardsInMenu.html
+[2022-06-29T01:55:21Z INFO  seeker]     Found 15 links
+[2022-06-29T01:55:21Z INFO  seeker] Beginning search on https://krbdev.mit.edu/rt/Search/Chart.html
+[2022-06-29T01:55:22Z INFO  seeker]     Found 18 links
+[2022-06-29T01:55:22Z INFO  seeker] Beginning search on https://krbdev.mit.edu/rt/Reports/CreatedByDates.html
+[2022-06-29T01:55:22Z INFO  seeker]     Found 15 links
+[2022-06-29T01:55:22Z INFO  seeker] Beginning search on https://krbdev.mit.edu/rt/Reports
+[2022-06-29T01:55:22Z INFO  seeker]     Found 15 links
+[2022-06-29T01:55:22Z INFO  seeker] Beginning search on https://krbdev.mit.edu/rt/Ticket/Display.html
+[2022-06-29T01:55:22Z INFO  seeker]     Found 16 links
+[2022-06-29T01:55:22Z INFO  seeker] Beginning search on https://krbdev.mit.edu/rt/Dashboards/index.html
+[2022-06-29T01:55:22Z INFO  seeker]     Found 15 links
+[2022-06-29T01:55:22Z INFO  seeker] Beginning search on https://krbdev.mit.edu/rt/User/Summary.html
+[2022-06-29T01:55:22Z INFO  seeker]     Found 15 links
+[2022-06-29T01:55:22Z INFO  seeker] Beginning search on https://krbdev.mit.edu/rt/Search/Edit.html
+[2022-06-29T01:55:22Z INFO  seeker]     Found 16 links
+[2022-06-29T01:55:22Z INFO  seeker] Beginning search on https://krbdev.mit.edu/rt/Reports/ResolvedByOwner.html
+[2022-06-29T01:55:23Z INFO  seeker]     Found 15 links
+[2022-06-29T01:55:23Z INFO  seeker] Beginning search on https://krbdev.mit.edu/rt/Reports/ResolvedByDates.html
+[2022-06-29T01:55:23Z INFO  seeker]     Found 16 links
+[2022-06-29T01:55:23Z INFO  seeker] Beginning search on https://krbdev.mit.edu/rt/Tools/index.html
+[2022-06-29T01:55:23Z INFO  seeker]     Found 15 links
+[2022-06-29T01:55:23Z INFO  seeker] Beginning search on https://krbdev.mit.edu/rt/User/Search.html
+[2022-06-29T01:55:23Z INFO  seeker]     Found 15 links
+[2022-06-29T01:55:23Z INFO  seeker] Beginning search on https://krbdev.mit.edu/rt/Tools/MyDay.html
+[2022-06-29T01:55:23Z INFO  seeker]     Found 15 links
+[2022-06-29T01:55:23Z INFO  seeker] Beginning search on https://krbdev.mit.edu/rt/NoAuth/krb5-1.13/bugs-1.13.7.html
+[2022-06-29T01:55:24Z INFO  seeker]     Found 23 links
+[2022-06-29T01:55:24Z INFO  seeker] Beginning search on https://krbdev.mit.edu/rt/Tools/MyReminders.html
+[2022-06-29T01:55:24Z INFO  seeker]     Found 15 links
+[2022-06-29T01:55:24Z INFO  seeker] Beginning search on https://krbdev.mit.edu/rt/Search/Results.tsv
+[2022-06-29T01:55:24Z INFO  seeker]     Found 0 links
+[2022-06-29T01:55:24Z INFO  seeker] Beginning search on https://krbdev.mit.edu/rt/NoAuth/iCal/guest/53c39b9a57c64ae0/Queue%20%3D%20'krb5'%20AND%20CF.%7BVersion_Fixed%7D%20!%3D%20'1.13.7'%20AND%20CF.%7BVersion_reported%7D%20%3D%20'1.13.7'%20AND%20CF.%7BTags%7D%20!%3D%20'noresource'%20AND%20CF.%7BTags%7D%20!%3D%20'nochange'
+[2022-06-29T01:55:24Z INFO  seeker]     Found 0 links
+[2022-06-29T01:55:24Z INFO  seeker] Beginning search on https://krbdev.mit.edu/rt/Search/Build.html
+[2022-06-29T01:55:25Z INFO  seeker]     Found 16 links
+[2022-06-29T01:55:25Z INFO  seeker] Beginning search on https://krbdev.mit.edu/rt/
+[2022-06-29T01:55:25Z INFO  seeker]     Found 19 links
+[2022-06-29T01:55:25Z INFO  seeker] Beginning search on https://krbdev.mit.edu/rt/Prefs/MyRT.html
+[2022-06-29T01:55:25Z INFO  seeker]     Found 16 links
+[2022-06-29T01:55:25Z INFO  seeker] Beginning search on https://krbdev.mit.edu/rt/Prefs/QueueList.html
+[2022-06-29T01:55:25Z INFO  seeker]     Found 16 links
+[2022-06-29T01:55:25Z INFO  seeker] Beginning search on https://krbdev.mit.edu/rt/Prefs/Search.html
+[2022-06-29T01:55:26Z INFO  seeker]     Found 16 links
+[2022-06-29T01:55:26Z INFO  seeker] Beginning search on https://krbdev.mit.edu/rt/Search/Simple.html
+[2022-06-29T01:55:26Z INFO  seeker]     Found 15 links
+[2022-06-29T01:55:26Z INFO  seeker] Beginning search on https://krbdev.mit.edu/rt/Search/Bulk.html
+[2022-06-29T01:55:26Z INFO  seeker]     Found 17 links
+[2022-06-29T01:55:26Z INFO  seeker] Beginning search on https://krbdev.mit.edu/rt/NoAuth/rss/guest/4b6a8f4f29cc57ed/
+[2022-06-29T01:55:26Z INFO  seeker]     Found 0 links
+[2022-06-29T01:55:26Z INFO  seeker] Beginning search on http://web.mit.edu/kerberos/krb5-1.13/krb5-1.13.7.sig
+[2022-06-29T01:55:27Z INFO  seeker]     Found 12 links
+[2022-06-29T01:55:27Z INFO  seeker] Beginning search on http://web.mit.edu/feedback
+[2022-06-29T01:55:27Z INFO  seeker]     Found 22 links
+[2022-06-29T01:55:27Z INFO  seeker] Beginning search on https://web.mit.edu/feedback/
+[2022-06-29T01:55:27Z INFO  seeker]     Found 22 links
+[2022-06-29T01:55:27Z INFO  seeker] Beginning search on http://web.mit.edu/campus-life
+[2022-06-29T01:55:28Z INFO  seeker]     Found 62 links
+[2022-06-29T01:55:28Z INFO  seeker] Beginning search on https://mta.mit.edu/
+[2022-06-29T01:55:30Z INFO  seeker]     Found 90 links
+[2022-06-29T01:55:30Z INFO  seeker] Beginning search on https://mta.mit.edu/music/performance/emersonharris-program-private-study/emersonharris-program-master-class-series
+[2022-06-29T01:55:30Z INFO  seeker]     Found 95 links
+[2022-06-29T01:55:30Z INFO  seeker] Beginning search on https://tim-tickets.atlas-apps.mit.edu/np53Gcc7nJv1PZjb6
+[2022-06-29T01:55:35Z WARN  seeker]     Detected redirect: https://tim-tickets.atlas-apps.mit.edu/np53Gcc7nJv1PZjb6 -> https://visitors.mit.edu/?event=d5cef109-ac62-4396-8eeb-bbca35ac53fb
+[2022-06-29T01:55:35Z INFO  seeker]     Found 0 links
+[2022-06-29T01:55:35Z INFO  seeker] Beginning search on https://tim-tickets.atlas-apps.mit.edu/tmfhPsRSKZqpZQsx5
+[2022-06-29T01:55:35Z WARN  seeker]     Detected redirect: https://tim-tickets.atlas-apps.mit.edu/tmfhPsRSKZqpZQsx5 -> https://visitors.mit.edu/?event=f8d07a4c-5960-495c-b8f6-a91d5117d704
+[2022-06-29T01:55:35Z INFO  seeker]     Found 0 links
+[2022-06-29T01:55:35Z INFO  seeker] Beginning search on https://tim-tickets.atlas-apps.mit.edu/x6XYpwwVD4TQUQGc8
+[2022-06-29T01:55:35Z WARN  seeker]     Detected redirect: https://tim-tickets.atlas-apps.mit.edu/x6XYpwwVD4TQUQGc8 -> https://visitors.mit.edu/?event=94ad97bb-2b8f-4cfb-96d2-9b8eb410c111
+[2022-06-29T01:55:35Z INFO  seeker]     Found 0 links
+[2022-06-29T01:55:35Z INFO  seeker] Beginning search on https://tim-tickets.atlas-apps.mit.edu/WQDBUswRJagD4C1k9
+[2022-06-29T01:55:36Z WARN  seeker]     Detected redirect: https://tim-tickets.atlas-apps.mit.edu/WQDBUswRJagD4C1k9 -> https://visitors.mit.edu/?event=66578fe4-b5f5-44de-9b3f-61d4d5542849
+[2022-06-29T01:55:36Z INFO  seeker]     Found 0 links
+[2022-06-29T01:55:36Z INFO  seeker] Beginning search on https://tim-tickets.atlas-apps.mit.edu/kAMGbSEJa3jvjwR69
+[2022-06-29T01:55:36Z WARN  seeker]     Detected redirect: https://tim-tickets.atlas-apps.mit.edu/kAMGbSEJa3jvjwR69 -> https://visitors.mit.edu/?event=ed0ce153-8696-4528-99ab-f86e181f7fdc
+[2022-06-29T01:55:36Z INFO  seeker]     Found 0 links
+[2022-06-29T01:55:36Z INFO  seeker] Beginning search on https://tim-tickets.atlas-apps.mit.edu/buY1cbgRLgJXxhRT7
+[2022-06-29T01:55:37Z WARN  seeker]     Detected redirect: https://tim-tickets.atlas-apps.mit.edu/buY1cbgRLgJXxhRT7 -> https://visitors.mit.edu/?event=a469ae20-7bd4-4017-92f5-8164805208c1
+[2022-06-29T01:55:37Z INFO  seeker]     Found 0 links
+[2022-06-29T01:55:37Z INFO  seeker] Beginning search on https://tim-tickets.atlas-apps.mit.edu/LcrxXHqyMoJCt3886
+[2022-06-29T01:55:37Z WARN  seeker]     Detected redirect: https://tim-tickets.atlas-apps.mit.edu/LcrxXHqyMoJCt3886 -> https://visitors.mit.edu/?event=147b56ae-d49f-40c9-87c2-8df0ad111f35
+[2022-06-29T01:55:37Z INFO  seeker]     Found 0 links
+[2022-06-29T01:55:37Z INFO  seeker] Beginning search on https://tim-tickets.atlas-apps.mit.edu/qQbs48PL5cCgc48G8
+[2022-06-29T01:55:38Z WARN  seeker]     Detected redirect: https://tim-tickets.atlas-apps.mit.edu/qQbs48PL5cCgc48G8 -> https://visitors.mit.edu/?event=864a4d59-069b-48d6-8f33-91f66f6f8f6e
+[2022-06-29T01:55:38Z INFO  seeker]     Found 0 links
+[2022-06-29T01:55:38Z INFO  seeker] Beginning search on https://tim-tickets.atlas-apps.mit.edu/2vdWR9MP9pBUg1Gq7
+[2022-06-29T01:55:38Z WARN  seeker]     Detected redirect: https://tim-tickets.atlas-apps.mit.edu/2vdWR9MP9pBUg1Gq7 -> https://visitors.mit.edu/?event=ad3cc5ed-b62e-486c-bce7-b6e174658295
+[2022-06-29T01:55:38Z INFO  seeker]     Found 0 links
+[2022-06-29T01:55:38Z INFO  seeker] Beginning search on https://mta.mit.edu/events/freeing-yourself-free-music
+[2022-06-29T01:55:39Z INFO  seeker]     Found 86 links
+[2022-06-29T01:55:39Z INFO  seeker] Beginning search on https://tim-tickets.atlas-apps.mit.edu/nBAHCbuJDMWcoEvTA
+[2022-06-29T01:55:40Z WARN  seeker]     Detected redirect: https://tim-tickets.atlas-apps.mit.edu/nBAHCbuJDMWcoEvTA -> https://visitors.mit.edu/?event=a469ae20-7bd4-4017-92f5-8164805208c1
+[2022-06-29T01:55:40Z INFO  seeker]     Found 0 links
+[2022-06-29T01:55:40Z INFO  seeker] Beginning search on https://covidapps.mit.edu/visitors
+[2022-06-29T01:55:44Z INFO  seeker]     Found 19 links
+[2022-06-29T01:55:44Z INFO  seeker] Beginning search on https://covidapps.mit.edu/covid-pass
+[2022-06-29T01:55:45Z INFO  seeker]     Found 16 links
+[2022-06-29T01:55:45Z INFO  seeker] Beginning search on https://covidapps.mit.edu/building-access-map
+[2022-06-29T01:55:48Z INFO  seeker]     Found 0 links
+[2022-06-29T01:55:48Z INFO  seeker] Beginning search on http://adminconnect.mit.edu/people/access-approvers
+[2022-06-29T01:55:54Z INFO  seeker]     Found 18 links
+[2022-06-29T01:55:54Z INFO  seeker] Beginning search on http://adminconnect.mit.edu/groups
+[2022-06-29T01:55:57Z INFO  seeker]     Found 17 links
+[2022-06-29T01:55:57Z INFO  seeker] Beginning search on http://wgssi.mit.edu/
+[2022-06-29T01:55:59Z INFO  seeker]     Found 20 links
+[2022-06-29T01:55:59Z INFO  seeker] Beginning search on https://wgssi.mit.edu/Shibboleth.sso/Login
+[2022-06-29T01:56:00Z WARN  seeker]     Detected redirect: https://wgssi.mit.edu/Shibboleth.sso/Login -> https://idp.mit.edu/idp/profile/SAML2/Redirect/SSO?execution=e1s1
+[2022-06-29T01:56:00Z INFO  seeker]     Found 3 links
+[2022-06-29T01:56:00Z INFO  seeker] Beginning search on http://wgssi.mit.edu/accomplishments
+[2022-06-29T01:56:00Z INFO  seeker]     Found 21 links
+[2022-06-29T01:56:00Z INFO  seeker] Beginning search on http://web.mit.edu/staff/
+[2022-06-29T01:56:02Z WARN  seeker]     Detected redirect: http://web.mit.edu/staff/ -> https://hr.mit.edu/
+[2022-06-29T01:56:02Z INFO  seeker]     Found 48 links
+[2022-06-29T01:56:02Z INFO  seeker] Beginning search on https://hr.mit.edu/diversity-inclusion
+[2022-06-29T01:56:04Z INFO  seeker]     Found 51 links
+[2022-06-29T01:56:04Z INFO  seeker] Beginning search on https://iceo.mit.edu/employee-resource-groups/
+[2022-06-29T01:56:07Z INFO  seeker]     Found 40 links
+[2022-06-29T01:56:07Z INFO  seeker] Beginning search on https://iceo.mit.edu/employee-resource-groups/asian-pacific-american-apa-erg/
+[2022-06-29T01:56:08Z INFO  seeker]     Found 41 links
+[2022-06-29T01:56:08Z INFO  seeker] Beginning search on https://mailman.mit.edu:444/mailman/listinfo/apaerg
+  96: error sending request for url (https://mailman.mit.edu:444/mailman/listinfo/apaerg): error trying to connect: handshake failure
+[2022-06-29T01:56:09Z INFO  seeker] Beginning search on https://idhr.mit.edu/submitincidentreport
+[2022-06-29T01:56:11Z INFO  seeker]     Found 85 links
+[2022-06-29T01:56:11Z INFO  seeker] Beginning search on https://idhr.mit.edu/fileincidentreport
+[2022-06-29T01:56:13Z INFO  seeker]     Found 85 links
+[2022-06-29T01:56:13Z INFO  seeker] Beginning search on https://idhr.mit.edu/reporting-options/confidential-resources
+[2022-06-29T01:56:14Z INFO  seeker]     Found 91 links
+[2022-06-29T01:56:14Z INFO  seeker] Beginning search on https://ombudsoffice.mit.edu/
+[2022-06-29T01:56:17Z INFO  seeker]     Found 19 links
+[2022-06-29T01:56:17Z INFO  seeker] Beginning search on https://ombudsoffice.mit.edu/our-approach/how-we%27re-unique
+[2022-06-29T01:56:18Z INFO  seeker]     Found 18 links
+[2022-06-29T01:56:18Z INFO  seeker] Beginning search on https://ombudsoffice.mit.edu/what-we-do
+[2022-06-29T01:56:19Z INFO  seeker]     Found 18 links
+[2022-06-29T01:56:19Z INFO  seeker] Beginning search on https://ombudsoffice.mit.edu/our-approach/our-services
+[2022-06-29T01:56:20Z INFO  seeker]     Found 18 links
+[2022-06-29T01:56:20Z INFO  seeker] Beginning search on https://ombudsoffice.mit.edu/what-we-do/common-concerns
+[2022-06-29T01:56:22Z INFO  seeker]     Found 18 links
+[2022-06-29T01:56:22Z INFO  seeker] Beginning search on https://ombudsoffice.mit.edu/contact-us
+[2022-06-29T01:56:23Z INFO  seeker]     Found 20 links
+[2022-06-29T01:56:23Z INFO  seeker] Beginning search on https://ombudsoffice.mit.edu/%3C/p
+[2022-06-29T01:56:24Z INFO  seeker]     Found 5 links
+[2022-06-29T01:56:24Z INFO  seeker] Beginning search on http://c3.llan.ll.mit.edu/wps/myportal/intranet
+ 107: error sending request for url (http://c3.llan.ll.mit.edu/wps/myportal/intranet): error trying to connect: tcp connect error: Operation timed out (os error 60)
+[2022-06-29T01:58:55Z INFO  seeker] Beginning search on https://ombudsoffice.mit.edu/faqs-and-resources/preparing-call-or-visit
+[2022-06-29T01:58:58Z INFO  seeker]     Found 18 links
+[2022-06-29T01:58:58Z INFO  seeker] Beginning search on https://ombudsoffice.mit.edu/who-we-are
+[2022-06-29T01:58:59Z INFO  seeker]     Found 18 links
+[2022-06-29T01:58:59Z INFO  seeker] Beginning search on https://ombudsoffice.mit.edu/faqs-and-resources/campus-resources
+[2022-06-29T01:59:00Z INFO  seeker]     Found 45 links
+[2022-06-29T01:59:00Z INFO  seeker] Beginning search on http://hotline.mit.edu/
+[2022-06-29T01:59:01Z INFO  seeker]     Found 10 links
+[2022-06-29T01:59:01Z INFO  seeker] Beginning search on http://hotline.mit.edu/mit-policies
+[2022-06-29T01:59:01Z INFO  seeker]     Found 12 links
+[2022-06-29T01:59:01Z INFO  seeker] Beginning search on http://conduct.mit.edu/
+[2022-06-29T01:59:03Z INFO  seeker]     Found 20 links
+[2022-06-29T01:59:03Z INFO  seeker] Beginning search on http://conduct.mit.edu/use-institute-resources
+[2022-06-29T01:59:03Z INFO  seeker]     Found 14 links
+[2022-06-29T01:59:03Z INFO  seeker] Beginning search on http://conduct.mit.edu/conflict-interest-and-commitment
+[2022-06-29T01:59:03Z INFO  seeker]     Found 18 links
+[2022-06-29T01:59:03Z INFO  seeker] Beginning search on http://coi.mit.edu/policy
+[2022-06-29T01:59:06Z INFO  seeker]     Found 135 links
+[2022-06-29T01:59:06Z INFO  seeker] Beginning search on https://coi.mit.edu/policy/policy-statement
+[2022-06-29T01:59:06Z INFO  seeker]     Found 135 links
+[2022-06-29T01:59:06Z INFO  seeker] Beginning search on https://coi.mit.edu/reference-and-user-guides/coi-user-guide/significant-financial-interest-disclosure/step-2-1
+[2022-06-29T01:59:06Z INFO  seeker]     Found 135 links
+[2022-06-29T01:59:06Z INFO  seeker] Beginning search on https://coi.mit.edu/reference-and-user-guides/overview-coi-disclosure-process/my-coi-access-through-coeus-lite
+[2022-06-29T01:59:07Z INFO  seeker]     Found 137 links
+[2022-06-29T01:59:07Z INFO  seeker] Beginning search on http://coeus.mit.edu/coeus
+[2022-06-29T01:59:11Z WARN  seeker]     Detected redirect: http://coeus.mit.edu/coeus -> https://idp.mit.edu/idp/profile/SAML2/Redirect/SSO?execution=e1s1
+[2022-06-29T01:59:11Z INFO  seeker]     Found 3 links
+[2022-06-29T01:59:11Z INFO  seeker] Beginning search on https://ist.mit.edu/certificates
+[2022-06-29T01:59:12Z INFO  seeker]     Found 58 links
+[2022-06-29T01:59:12Z INFO  seeker] Beginning search on https://ist.mit.edu/about/it-policies
+[2022-06-29T01:59:13Z INFO  seeker]     Found 59 links
+[2022-06-29T01:59:13Z INFO  seeker] Beginning search on https://ist.mit.edu/about/policies/dhcp-usage-logs
+[2022-06-29T01:59:14Z INFO  seeker]     Found 42 links
+[2022-06-29T01:59:14Z INFO  seeker] Beginning search on http://web.mit.edu/policies/11/index.html
+[2022-06-29T01:59:17Z WARN  seeker]     Detected redirect: http://web.mit.edu/policies/11/index.html -> https://policies.mit.edu/policies-procedures
+[2022-06-29T01:59:17Z INFO  seeker]     Found 121 links
+[2022-06-29T01:59:17Z INFO  seeker] Beginning search on https://ist.mit.edu/vpn
+[2022-06-29T01:59:17Z INFO  seeker]     Found 52 links
+[2022-06-29T01:59:17Z INFO  seeker] Beginning search on https://ist.mit.edu/campus-DAS
+[2022-06-29T01:59:18Z INFO  seeker]     Found 49 links
+[2022-06-29T01:59:18Z INFO  seeker] Beginning search on http://kb.mit.edu/confluence/x/lCxBCQ
+[2022-06-29T01:59:20Z INFO  seeker]     Found 32 links
+[2022-06-29T01:59:20Z INFO  seeker] Beginning search on http://kb.mit.edu/confluence/exportword
+[2022-06-29T01:59:20Z INFO  seeker]     Found 3 links
+[2022-06-29T01:59:20Z INFO  seeker] Beginning search on http://kb.mit.edu/confluence/homepage.action
+[2022-06-29T01:59:21Z INFO  seeker]     Found 24 links
+[2022-06-29T01:59:21Z INFO  seeker] Beginning search on http://kb.mit.edu/confluence/display/istcontrib/Zoom+Phone+Service
+[2022-06-29T01:59:21Z INFO  seeker]     Found 41 links
+[2022-06-29T01:59:21Z INFO  seeker] Beginning search on http://kb.mit.edu/confluence/display/istcontrib/Using+Zoom+Phone+Service+-+Delegate+Setup+for+Voicemail+%28Including+to+Email%29
+[2022-06-29T01:59:22Z INFO  seeker]     Found 36 links
+[2022-06-29T01:59:22Z INFO  seeker] Beginning search on http://kb.mit.edu/confluence/x/KAfSCQ
+[2022-06-29T01:59:23Z INFO  seeker]     Found 36 links
+[2022-06-29T01:59:23Z INFO  seeker] Beginning search on http://kb.mit.edu/confluence/display/istcontrib/Using+Zoom+Phone+Service+-+Delegate+Setup+for+Voicemail+%28Including+to+Email%29;jsessionid=F34A750483387CF82C153AF6727D7D0D
+[2022-06-29T01:59:23Z INFO  seeker]     Found 36 links
+[2022-06-29T01:59:23Z INFO  seeker] Beginning search on http://kb.mit.edu/confluence/display/istcontrib/Using+Zoom+Phone+Service+-+Delegate+Setup+for+Voicemail+(Including+to+Email)
+[2022-06-29T01:59:24Z INFO  seeker]     Found 35 links
+[2022-06-29T01:59:24Z INFO  seeker] Beginning search on http://kb.mit.edu/confluence/x/DwLSCQ
+[2022-06-29T01:59:25Z INFO  seeker]     Found 42 links
+[2022-06-29T01:59:25Z INFO  seeker] Beginning search on http://kb.mit.edu/confluence/display/istcontrib/Zoom+Phone+Service;jsessionid=82D5065A107F0B9B2530C78613C6435E
+[2022-06-29T01:59:25Z INFO  seeker]     Found 42 links
+[2022-06-29T01:59:25Z INFO  seeker] Beginning search on http://kb.mit.edu/confluence/display/istcontrib/Touchstone+Landing+Page
+[2022-06-29T01:59:26Z INFO  seeker]     Found 33 links
+[2022-06-29T01:59:26Z INFO  seeker] Beginning search on https://ist.mit.edu/help/
+[2022-06-29T01:59:26Z INFO  seeker]     Found 39 links
+[2022-06-29T01:59:26Z INFO  seeker] Beginning search on http://kb.mit.edu/confluence/display/istcontrib/Touchstone+FAQ
+[2022-06-29T01:59:27Z INFO  seeker]     Found 33 links
+[2022-06-29T01:59:27Z INFO  seeker] Beginning search on http://ist.mit.edu/accounts
+[2022-06-29T01:59:27Z INFO  seeker]     Found 55 links
+[2022-06-29T01:59:27Z INFO  seeker] Beginning search on http://web.mit.edu/register/
+[2022-06-29T01:59:28Z INFO  seeker]     Found 0 links
+[2022-06-29T01:59:28Z INFO  seeker] Beginning search on https://ist.mit.edu/start/kerberos
+[2022-06-29T01:59:28Z INFO  seeker]     Found 56 links
+[2022-06-29T01:59:28Z INFO  seeker] Beginning search on http://web.mit.edu/housing/och/index.html
+[2022-06-29T01:59:32Z WARN  seeker]     Detected redirect: http://web.mit.edu/housing/och/index.html -> https://studentlife.mit.edu/housing
+[2022-06-29T01:59:32Z INFO  seeker]     Found 53 links
+[2022-06-29T01:59:32Z INFO  seeker] Beginning search on https://studentlife.mit.edu/wellbeing
+[2022-06-29T01:59:32Z INFO  seeker]     Found 46 links
+[2022-06-29T01:59:32Z INFO  seeker] Beginning search on http://web.mit.edu/webcast/firstyear/s21/1/
+[2022-06-29T01:59:33Z INFO  seeker]     Found 2 links
+[2022-06-29T01:59:33Z INFO  seeker] Beginning search on https://www.mit.edu/
+[2022-06-29T01:59:34Z INFO  seeker]     Found 27 links
+[2022-06-29T01:59:34Z INFO  seeker] Beginning search on https://www.mit.edu/building-a-better-world
+[2022-06-29T01:59:35Z INFO  seeker]     Found 31 links
+[2022-06-29T01:59:35Z INFO  seeker] Beginning search on https://www.mit.edu/building-a-better-world/
+[2022-06-29T01:59:35Z INFO  seeker]     Found 31 links
+[2022-06-29T01:59:35Z INFO  seeker] Beginning search on https://alum.mit.edu/
+ 149: error following redirect for url (https://alum.mit.edu/): too many redirects
+[2022-06-29T01:59:41Z INFO  seeker] Beginning search on https://giving.mit.edu/form/
+[2022-06-29T01:59:43Z INFO  seeker]     Found 0 links
+[2022-06-29T01:59:43Z INFO  seeker] Beginning search on https://solve.mit.edu/
+[2022-06-29T01:59:46Z INFO  seeker]     Found 52 links
+[2022-06-29T01:59:46Z INFO  seeker] Beginning search on https://solve.mit.edu/partner-with-solve
+thread 'main' panicked at 'empty host', src/lib.rs:147:27
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace

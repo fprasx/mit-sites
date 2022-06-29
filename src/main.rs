@@ -10,9 +10,9 @@ pub const GREEN: &str = "\x1B[0;32m"; // Green
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
     env_logger::init();
     let mut root = VecDeque::new();
-    root.push_back(Url::parse("https://web.mit.edu/museum").expect("failed to parse root"));
+    root.push_back(Url::parse("https://mit.edu").expect("failed to parse root"));
     let mut seeker = Seeker::new(root);
-    for i in 0..1000 {
+    for i in 0..10_000 {
         match seeker.execute().await {
             Ok(_) => continue,
             Err(e) => println!("{i:4}: {e}"),

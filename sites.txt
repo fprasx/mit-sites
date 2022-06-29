@@ -94,6 +94,7 @@ cnre
 cocreationstudio
 cod
 code.appinventor
+coeus
 cognet
 coi
 commencement
@@ -103,6 +104,7 @@ community.appinventor
 comp-med
 computing
 concur
+conduct
 conformabledecoders.media
 convert.appinventor
 coolthink.appinventor
@@ -264,6 +266,7 @@ ki
 ki-galleries
 ki-images
 ki-sbc
+krbdev
 ksj
 langer-lab
 larch-www.lcs
@@ -289,6 +292,7 @@ listart
 listart-r1
 lists.csail
 lit
+ll
 lmp
 lms.mitx
 macgregor
@@ -455,6 +459,7 @@ smallbusiness.ll
 smart
 socialmediahub
 solar-cars.scripts
+solve
 southtexas.alumclub
 space
 spectrum
@@ -502,6 +507,7 @@ uaap
 upop
 upop-portal
 urop
+visitors
 voxel
 vpf
 washingtondc.alumclub

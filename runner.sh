@@ -1,0 +1,1 @@
+RUST_LOG=info cargo run -- > out.txt 2>&1
