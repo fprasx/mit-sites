@@ -1,7 +1,10 @@
-use log::{info, warn};
+use log::{error, info, warn};
 use reqwest::{Client, Url};
 use scraper::{Html, Selector};
-use std::{collections::{HashSet, VecDeque}, fmt::Display};
+use std::{
+    collections::{HashSet, VecDeque},
+    fmt::Display,
+};
 
 pub struct Seeker {
     pub found: HashSet<String>,
@@ -15,7 +18,7 @@ pub struct Seeker {
 #[derive(PartialEq, Eq, Hash)]
 pub struct Redirect {
     from: Url,
-    to: Url
+    to: Url,
 }
 
 impl Redirect {
@@ -36,18 +39,31 @@ impl Seeker {
         info!("Beginning search on {base}");
 
         let resp = self.secure.get(base.as_str()).send().await?;
+        
+        let dest = resp.url();
 
         // Check for if there was a redirect
         // The reason we only check if the domain changes is things like http -> https
         // or something like foo/bar -> foo/bar/
         // We might miss some edge cases but this should do the trick most of the time
-        if resp.url().domain() != base.domain() {
+        if !filter(dest) {
+            warn!("{base} -> {dest}, producing an invalid link");
+            return Ok(())
+        }
+
+        if dest.domain() != base.domain() {
             let redirect = Redirect::new(base.clone(), resp.url().clone());
             warn!("    Detected redirect: {redirect}");
             self.redirects.insert(redirect);
+
+            // If it redirected to a non-mit site, return
+            if !base.as_str().contains("mit.edu") {
+                println!("{base}");
+                return Ok(())
+            }
         }
 
-        let urlclone = resp.url().clone();
+        let urlclone = dest.clone();
         // Set base to the redirected-to URL to resolve relative paths like /foo correctly
         base = &urlclone;
 
@@ -63,7 +79,9 @@ impl Seeker {
             .filter_map(|a| a.value().attr("href").and_then(|href| into_mit(base, href)))
             .filter(filter)
             .collect::<HashSet<Url>>();
-        info!("    Found {} links", links.len());
+
+        let len = links.len();
+        let mut counter = 0usize;
 
         for link in links {
             // The domain: blank.mit.edu
@@ -77,8 +95,14 @@ impl Seeker {
                 into_mit(base, link.as_str()).ok_or("failed to join relative link with base")?,
             ) {
                 self.queue.push_back(link);
+                counter += 1;
             }
         }
+
+        let proportion = (counter as f32) / (len as f32);
+
+        info!("Found {counter}/{len} new links ({proportion:.2})");
+
         Ok(())
     }
 
@@ -103,10 +127,13 @@ impl Seeker {
 fn filter(url: &Url) -> bool {
     let domain = match url.domain() {
         Some(d) => d,
-        None => return false
+        None => return false,
     };
 
     let str = url.as_str();
+
+    // Look for calendar keywords, month/day/year, long numeric strings
+    // avoid links with user in them
 
     // Only search mit sites
     if !domain.contains("mit.edu")
@@ -114,11 +141,22 @@ fn filter(url: &Url) -> bool {
         || !url.scheme().contains("http")
         // PDF mostly likely won't contain links, stalls seeker on long lists of PDFs
         || str.contains(".pdf") 
+        || str.contains(".zip") 
+        || str.contains(".gz") 
+        // Calendars don't turn up many links, tend to cause ~infinite stays on that site
+        || str.contains("calendar") 
+        || str.contains("month") 
+        || str.contains("day") 
         // This site has a calendar
         || (domain.contains("vpf.mit.edu") && str.contains("day"))
         // This site has a helpdesk with a bunch of tags that have ~infinite permutations
         // TODO: maybe skip this altogether
         || (domain.contains("kb.mit.edu") && str.contains("label"))
+        // This site has a helpdesk with a bunch of tags that have ~infinite permutations
+        // TODO: maybe skip this altogether
+        || (domain.contains("wikis.mit.edu") && str.contains("label"))
+        // Lot's of sublinks, no new links
+        || domain.contains("solve.mit.edu")
     {
         return false;
     }
@@ -137,15 +175,16 @@ fn into_mit(base: &Url, href: &str) -> Option<Url> {
             url.set_query(None);
             Some(url)
         }
-        Err(_) => {
-            match Url::join(base, href) {
-                Ok(mut url) => {
-                    url.set_fragment(None);
-                    url.set_query(None);
-                    Some(url)
-                }
-                Err(e) => panic!("{e}"), // TODO: fix this
+        Err(_) => match Url::join(base, href) {
+            Ok(mut url) => {
+                url.set_fragment(None);
+                url.set_query(None);
+                Some(url)
             }
-        }
+            Err(e) => {
+                error!("Failed to join {base} and {href}: {e}");
+                None
+            }
+        },
     }
 }
