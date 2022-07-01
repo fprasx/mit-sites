@@ -2,7 +2,7 @@ use log::{error, info, warn};
 use reqwest::{Client, Url};
 use scraper::{Html, Selector};
 use std::{
-    collections::{HashSet, VecDeque},
+    collections::{HashSet, VecDeque, HashMap},
     fmt::Display,
 };
 
@@ -13,6 +13,7 @@ pub struct Seeker {
     pub queue: VecDeque<Url>,
     secure: Client,
     unsecure: Client,
+    searches: HashMap<String, usize>
 }
 
 #[derive(PartialEq, Eq, Hash)]
@@ -34,12 +35,12 @@ impl Display for Redirect {
 }
 
 impl Seeker {
-    pub async fn execute(&mut self) -> Result<(), Box<dyn std::error::Error>> {
-        let mut base = &self.queue.pop_back().ok_or("queue was empty")?;
+    async fn get(&mut self, base: &Url) -> Result<String, Box<dyn std::error::Error>> {
         info!("Beginning search on {base}");
 
+        // TODO: switch to unsecure client if need be
         let resp = self.secure.get(base.as_str()).send().await?;
-        
+
         let dest = resp.url();
 
         // Check for if there was a redirect
@@ -48,7 +49,7 @@ impl Seeker {
         // We might miss some edge cases but this should do the trick most of the time
         if !filter(dest) {
             warn!("{base} -> {dest}, producing an invalid link");
-            return Ok(())
+            return Err("redirected to invalid link".into());
         }
 
         if dest.domain() != base.domain() {
@@ -59,33 +60,53 @@ impl Seeker {
             // If it redirected to a non-mit site, return
             if !base.as_str().contains("mit.edu") {
                 println!("{base}");
-                return Ok(())
+                return Err("redirected to non-mit link".into());
             }
         }
 
-        let urlclone = dest.clone();
-        // Set base to the redirected-to URL to resolve relative paths like /foo correctly
-        base = &urlclone;
+        Ok(resp.text().await?)
+    }
 
-        let text = resp.text().await?;
+    pub async fn execute(&mut self) -> Result<(), Box<dyn std::error::Error>> {
+        // Get the next link
+        let base = &self.queue.pop_back().ok_or("queue was empty")?;
 
+        // Get the site
+        let text = self.get(base).await?;
+
+        // Parse html
         let html = Html::parse_document(&text);
 
+        // Init the css selector
         let selector = Selector::parse("a").unwrap();
         let a = html.select(&selector);
 
+        // Select the links and filter them
         let links = a
             .into_iter()
             .filter_map(|a| a.value().attr("href").and_then(|href| into_mit(base, href)))
             .filter(filter)
             .collect::<HashSet<Url>>();
 
+        
         let len = links.len();
         let mut counter = 0usize;
 
         for link in links {
             // The domain: blank.mit.edu
             let domain = link.domain().ok_or("failed to get domain")?;
+
+            // Book-keeping so we don't search any one site more than 200 times
+            // Increase the count for searches on this domain by one
+            let count = self.searches.entry(domain.into()).or_insert(0);
+
+            // If the count is greater than 200, `continue`
+            if *count > 200 {
+                continue;
+            }
+
+            // Otherwise, incerement the counter
+            *count += 1;
 
             // The URL without all the trailing bits example.mit.edu/... <- cut off ...
             self.found.insert(domain.to_owned());
@@ -109,7 +130,7 @@ impl Seeker {
     pub fn new(roots: VecDeque<Url>) -> Self {
         Self {
             found: HashSet::new(),
-            searched: HashSet::new(),
+            searched: HashSet::with_capacity(5000),
             redirects: HashSet::new(),
             queue: roots,
             secure: reqwest::ClientBuilder::new()
@@ -119,6 +140,7 @@ impl Seeker {
                 .danger_accept_invalid_certs(true)
                 .build()
                 .expect("Failed to build secure client"),
+            searches: HashMap::new()
         }
     }
 }
@@ -139,22 +161,27 @@ fn filter(url: &Url) -> bool {
     if !domain.contains("mit.edu")
         // Can't search things like mailto or ftp
         || !url.scheme().contains("http")
+
         // PDF mostly likely won't contain links, stalls seeker on long lists of PDFs
         || str.contains(".pdf") 
         || str.contains(".zip") 
         || str.contains(".gz") 
+        || str.contains(".mp4") 
+        || str.contains(".pptx") 
+
         // Calendars don't turn up many links, tend to cause ~infinite stays on that site
         || str.contains("calendar") 
         || str.contains("month") 
         || str.contains("day") 
-        // This site has a calendar
-        || (domain.contains("vpf.mit.edu") && str.contains("day"))
+
         // This site has a helpdesk with a bunch of tags that have ~infinite permutations
         // TODO: maybe skip this altogether
         || (domain.contains("kb.mit.edu") && str.contains("label"))
+
         // This site has a helpdesk with a bunch of tags that have ~infinite permutations
         // TODO: maybe skip this altogether
         || (domain.contains("wikis.mit.edu") && str.contains("label"))
+
         // Lot's of sublinks, no new links
         || domain.contains("solve.mit.edu")
     {
