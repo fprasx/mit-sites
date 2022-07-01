@@ -2,7 +2,7 @@ use log::{error, info, warn};
 use reqwest::{Client, Url};
 use scraper::{Html, Selector};
 use std::{
-    collections::{HashSet, VecDeque, HashMap},
+    collections::{HashMap, HashSet, VecDeque},
     fmt::Display,
 };
 
@@ -13,7 +13,7 @@ pub struct Seeker {
     pub queue: VecDeque<Url>,
     secure: Client,
     unsecure: Client,
-    searches: HashMap<String, usize>
+    searches: HashMap<String, usize>,
 }
 
 #[derive(PartialEq, Eq, Hash)]
@@ -30,13 +30,13 @@ impl Redirect {
 
 impl Display for Redirect {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
-        f.write_fmt(format_args!("{} -> {}", self.from, self.to))
+        f.write_fmt(format_args!("<{}> -> <{}>", self.from, self.to))
     }
 }
 
 impl Seeker {
     async fn get(&mut self, base: &Url) -> Result<String, Box<dyn std::error::Error>> {
-        info!("Beginning search on {base}");
+        info!("Beginning search on <{base}>");
 
         // TODO: switch to unsecure client if need be
         let resp = self.secure.get(base.as_str()).send().await?;
@@ -58,7 +58,7 @@ impl Seeker {
             self.redirects.insert(redirect);
 
             // If it redirected to a non-mit site, return
-            if !base.as_str().contains("mit.edu") {
+            if !base.as_str().contains(".mit.edu") {
                 println!("{base}");
                 return Err("redirected to non-mit link".into());
             }
@@ -88,7 +88,6 @@ impl Seeker {
             .filter(filter)
             .collect::<HashSet<Url>>();
 
-        
         let len = links.len();
         let mut counter = 0usize;
 
@@ -140,7 +139,7 @@ impl Seeker {
                 .danger_accept_invalid_certs(true)
                 .build()
                 .expect("Failed to build secure client"),
-            searches: HashMap::new()
+            searches: HashMap::new(),
         }
     }
 }
@@ -158,16 +157,38 @@ fn filter(url: &Url) -> bool {
     // avoid links with user in them
 
     // Only search mit sites
-    if !domain.contains("mit.edu")
+    if !domain.contains(".mit.edu")
         // Can't search things like mailto or ftp
         || !url.scheme().contains("http")
 
-        // PDF mostly likely won't contain links, stalls seeker on long lists of PDFs
+        // Unhelpful extensions
         || str.contains(".pdf") 
         || str.contains(".zip") 
         || str.contains(".gz") 
         || str.contains(".mp4") 
         || str.contains(".pptx") 
+        || str.contains(".32s")
+        || str.contains(".JPG")
+        || str.contains(".PDF")
+        || str.contains(".action")
+        || str.contains(".avi")
+        || str.contains(".cgi")
+        || str.contains(".continued")
+        || str.contains(".dll")
+        || str.contains(".do")
+        || str.contains(".docx")
+        || str.contains(".exe")
+        || str.contains(".gif")
+        || str.contains(".jar")
+        || str.contains(".java")
+        || str.contains(".jpg")
+        || str.contains(".mp4")
+        || str.contains(".org")
+        || str.contains(".png")
+        || str.contains(".pptx")
+        || str.contains(".wmv")
+        || str.contains(".xlsx")
+        || str.contains(".com")
 
         // Calendars don't turn up many links, tend to cause ~infinite stays on that site
         || str.contains("calendar") 

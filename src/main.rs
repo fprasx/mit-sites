@@ -9,7 +9,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
 
     // This will be the initial start point
     let mut root = VecDeque::new();
-    root.push_back(Url::parse("https://mit.edu").expect("failed to parse root"));
+    root.push_back(Url::parse("https://web.mit.edu").expect("failed to parse root"));
 
     // Initialize the seeker
     let mut seeker = Seeker::new(root);
