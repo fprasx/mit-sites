@@ -1,10 +1,20 @@
+// TODO: Add blacklist for searches, if a search on a domaine errored, don't search it again
 use log::{error, info, warn};
 use reqwest::{Client, Url};
 use scraper::{Html, Selector};
 use std::{
     collections::{HashMap, HashSet, VecDeque},
-    fmt::Display,
+    fmt::Display, time::Duration,
 };
+
+// To avoid compiling the regex multiple times in a loop
+// https://docs.rs/once_cell/latest/once_cell/#lazily-compiled-regex
+macro_rules! regex {
+    ($re:literal $(,)?) => {{
+        static RE: once_cell::sync::OnceCell<regex::Regex> = once_cell::sync::OnceCell::new();
+        RE.get_or_init(|| regex::Regex::new($re).unwrap())
+    }};
+}
 
 pub struct Seeker {
     pub found: HashSet<String>,
@@ -133,10 +143,12 @@ impl Seeker {
             redirects: HashSet::new(),
             queue: roots,
             secure: reqwest::ClientBuilder::new()
+                .timeout(Duration::from_secs(5))
                 .build()
                 .expect("Failed to build secure client"),
             unsecure: reqwest::ClientBuilder::new()
                 .danger_accept_invalid_certs(true)
+                .timeout(Duration::from_secs(5))
                 .build()
                 .expect("Failed to build secure client"),
             searches: HashMap::new(),
@@ -155,56 +167,27 @@ fn filter(url: &Url) -> bool {
 
     // Look for calendar keywords, month/day/year, long numeric strings
     // avoid links with user in them
+    let re = regex!(r"(?x)
+    \.                               # Period lets us know we're starting an extension
+
+    pdf|zip|gz|mp4|pptx|32s|JPG|PDF| # Avoid all of these
+    action|avi|cgi|continued|dll|do|
+    docx|exe|gif|jar|java|jpg|mp4|org|
+    png|pptx|wmv|xlsx|com|
+
+    calendar|day|year|               # Avoid calendars
+
+    (solve|kb|wikis)\.mit\.edu       # Lots of sublinks, no new links
+    ");
 
     // Only search mit sites
     if !domain.contains(".mit.edu")
         // Can't search things like mailto or ftp
         || !url.scheme().contains("http")
 
-        // Unhelpful extensions
-        || str.contains(".pdf") 
-        || str.contains(".zip") 
-        || str.contains(".gz") 
-        || str.contains(".mp4") 
-        || str.contains(".pptx") 
-        || str.contains(".32s")
-        || str.contains(".JPG")
-        || str.contains(".PDF")
-        || str.contains(".action")
-        || str.contains(".avi")
-        || str.contains(".cgi")
-        || str.contains(".continued")
-        || str.contains(".dll")
-        || str.contains(".do")
-        || str.contains(".docx")
-        || str.contains(".exe")
-        || str.contains(".gif")
-        || str.contains(".jar")
-        || str.contains(".java")
-        || str.contains(".jpg")
-        || str.contains(".mp4")
-        || str.contains(".org")
-        || str.contains(".png")
-        || str.contains(".pptx")
-        || str.contains(".wmv")
-        || str.contains(".xlsx")
-        || str.contains(".com")
-
-        // Calendars don't turn up many links, tend to cause ~infinite stays on that site
-        || str.contains("calendar") 
-        || str.contains("month") 
-        || str.contains("day") 
-
-        // This site has a helpdesk with a bunch of tags that have ~infinite permutations
-        // TODO: maybe skip this altogether
-        || (domain.contains("kb.mit.edu") && str.contains("label"))
-
-        // This site has a helpdesk with a bunch of tags that have ~infinite permutations
-        // TODO: maybe skip this altogether
-        || (domain.contains("wikis.mit.edu") && str.contains("label"))
-
-        // Lot's of sublinks, no new links
-        || domain.contains("solve.mit.edu")
+        // Check a bunch of extensions, excluse some sites
+        // We don't want it to match
+        || re.is_match(str)
     {
         return false;
     }

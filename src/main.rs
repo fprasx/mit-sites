@@ -4,7 +4,7 @@ use url::Url;
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
-    // Get loggin going
+    // Get logging going
     env_logger::init();
 
     // This will be the initial start point

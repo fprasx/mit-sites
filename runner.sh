@@ -4,4 +4,4 @@ echo "Extensions found:"
 rg "\.\w*\$" -o out.txt | sort -u
 
 echo "sites found"
-rg ' https*://([\w.]+)\.mit\.edu' -oNr '$1'  out.txt | sort -u
+rg '<https*://([\w.]+)\.mit\.edu' -oNr '$1'  out.txt | sort -u
