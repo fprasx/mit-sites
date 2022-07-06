@@ -478,9 +478,9 @@ ec
 eccl
 econ-www
 economics
+edelmanlab
 edgerton
 edgerton-dev
-edgerton-dev.mit.edu/programs-k-12-educators-and-parents/active-molecular-models/edgerton-dev
 eds
 edtech
 edu-apps
@@ -589,7 +589,6 @@ furstlab
 future
 future-of-libraries
 fx
-fx.mit.edu/fx
 ga3
 gablab
 galleries
@@ -670,7 +669,6 @@ haystack.csail
 hazefree
 hcie.csail
 hd.media
-hd.media.mit.edu/hd.media
 hdsr.mitpress
 hebb
 heiman
@@ -679,7 +677,6 @@ hh.csail
 hirsch
 history
 hkinnovationnode
-hkinnovationnode.mit.edu/https://hkinnovationnode
 hkn
 hkss
 horizon
@@ -726,7 +723,6 @@ ilp
 iltfp
 imap.csail
 imara.csail
-imara.csail.mit.edu/%20http://imara.csail
 imes
 imit
 impactclimate
@@ -861,7 +857,6 @@ lgosdm
 lgsa
 lgsa.scripts
 libanswers
-libanswers.mit.edu/faq/libraries
 libcal
 libguides
 libproxy
@@ -1005,8 +1000,6 @@ mitibmwatsonailab
 mitili
 mitleadership
 mitmgmtfaculty
-mitmgmtfaculty.mit.edu/fmurray/mitmgmtfaculty
-mitmgmtfaculty.mit.edu/mitmgmtfaculty
 mitmobius
 mitmrsec
 mitmuseum
@@ -1230,7 +1223,6 @@ planner
 platalab
 pleasure
 pmg.csail
-pmg.csail.mit.edu/ftp.lcs
 pmg.lcs
 pmlab
 pneuact.csail
@@ -1389,7 +1381,6 @@ sea2
 seagrant
 seaperch
 seedapp
-segovia
 sei-sites
 sei.odl
 seid
@@ -1651,7 +1642,6 @@ wga3
 wgroup-web.lids
 wgs
 wgssi
-wgssi.mit.edu/.https://wgssi
 wh
 whamit
 whereis
