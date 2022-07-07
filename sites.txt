@@ -352,6 +352,7 @@ cocosci.scripts
 cocreationstudio
 cod
 code.appinventor
+codeforgood
 codeit
 coeus
 cognet
