@@ -54,7 +54,7 @@ def scan(prev_link: str, prev_found: Set[str], depth: int, session: HTMLSession)
         if not link in prev_found:
             prev_found.add(link)
             if DBG:
-                print(f'{"    " * depth}{get_id(link)}  @ ({depth})')
+                print(f'{"  " * depth}<{get_id(link)}>  @ ({depth})')
             prev_found = prev_found.union(scan(link, prev_found, depth + 1, session) )
     return prev_found
 

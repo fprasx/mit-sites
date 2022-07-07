@@ -5,6 +5,7 @@ use scraper::{Html, Selector};
 use std::{
     collections::{HashMap, HashSet, VecDeque},
     fmt::Display, time::Duration,
+    path::Path
 };
 
 // To avoid compiling the regex multiple times in a loop
@@ -48,8 +49,13 @@ impl Seeker {
     async fn get(&mut self, base: &Url) -> Result<String, Box<dyn std::error::Error>> {
         info!("Beginning search on <{base}>");
 
-        // TODO: switch to unsecure client if need be
-        let resp = self.secure.get(base.as_str()).send().await?;
+        let resp = match self.secure.get(base.as_str()).send().await {
+            Ok(resp) => resp,
+            Err(_) => {
+                info!("Switching to unsecure client");
+                self.unsecure.get(base.as_str()).send().await?
+            }
+        };
 
         let dest = resp.url();
 
@@ -143,12 +149,12 @@ impl Seeker {
             redirects: HashSet::new(),
             queue: roots,
             secure: reqwest::ClientBuilder::new()
-                .timeout(Duration::from_secs(5))
+                .timeout(Duration::from_secs(10))
                 .build()
                 .expect("Failed to build secure client"),
             unsecure: reqwest::ClientBuilder::new()
                 .danger_accept_invalid_certs(true)
-                .timeout(Duration::from_secs(5))
+                .timeout(Duration::from_secs(10))
                 .build()
                 .expect("Failed to build secure client"),
             searches: HashMap::new(),
@@ -163,18 +169,25 @@ fn filter(url: &Url) -> bool {
         None => return false,
     };
 
+    // Make sure the extension is ok
+    match Path::new(url.path()).extension() {
+        Some(extension) => {
+            if extension != "html" 
+            || extension != "htm" 
+            || extension != "shtml" 
+            {
+                return false;
+            }
+        },
+        // No extension means probably html
+        None => ()
+    }
+
     let str = url.as_str();
 
     // Look for calendar keywords, month/day/year, long numeric strings
     // avoid links with user in them
     let re = regex!(r"(?x)
-    \.                               # Period lets us know we're starting an extension
-
-    pdf|zip|gz|mp4|pptx|32s|JPG|PDF| # Avoid all of these
-    action|avi|cgi|continued|dll|do|
-    docx|exe|gif|jar|java|jpg|mp4|org|
-    png|pptx|wmv|xlsx|com|
-
     calendar|day|year|               # Avoid calendars
 
     (solve|kb|wikis)\.mit\.edu       # Lots of sublinks, no new links
