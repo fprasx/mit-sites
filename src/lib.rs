@@ -1,4 +1,6 @@
-// TODO: Add blacklist for searches, if a search on a domaine errored, don't search it again
+// TODO: Add blacklist for searches, if a search on a domain errored, don't search it again
+// TODO: Deal with fmurray.scripts, check log-2022-07-08
+// TODO: use percentage of new links found to judge whether to use site
 use log::{error, info, warn};
 use reqwest::{Client, Url};
 use scraper::{Html, Selector};
@@ -75,7 +77,7 @@ impl Seeker {
 
             // If it redirected to a non-mit site, return
             if !base.as_str().contains(".mit.edu") {
-                println!("{base}");
+                eprintln!("{base}");
                 return Err("redirected to non-mit link".into());
             }
         }

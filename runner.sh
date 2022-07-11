@@ -1,7 +1,13 @@
-RUST_LOG=info cargo run -- > out.txt 2>&1
+#!/bin/sh
 
-echo "Extensions found:"
-rg "\.\w*\$" -o out.txt | sort -u
+logfile="~/Code/mit-sites/log/log-$(date +%y-%m-%d-%s)"
+outfile="~/Code/mit-sites/out/out-$(date +%y-%m-%d-%s)"
 
-echo "sites found"
-rg '<https*://([\w.]+)\.mit\.edu' -oNr '$1'  out.txt | sort -u
+touch "$logfile"
+touch "$outfile"
+
+RUST_LOG=info ~/.cargo/bin/cargo run --manifest-path "~/Code/mit-sites/Cargo.toml" -q -- 2> "$logfile" 1> "$outfile"
+
+/usr/local/bin/rg '<https*://([\w.]+)\.mit\.edu' -oNr '$1'  "$logfile" >> "$outfile"
+
+sort -u -o "$outfile" "$outfile"

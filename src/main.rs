@@ -1,6 +1,7 @@
 use seeker::Seeker;
 use std::collections::VecDeque;
 use url::Url;
+use log::error;
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
@@ -18,21 +19,14 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     for i in 0..20_000 {
         match seeker.execute().await {
             Ok(_) => continue,
-            Err(e) => println!("{i:4}: {e}"),
+            Err(e) => error!("{i:4}: {e}"),
         }
     }
 
     // Display all the links found
-    println!("Found:");
     for i in seeker.found {
-        println!("{i}");
+        println!("{}", i.replace(".mit.edu", ""));
     }
-
-    // Print the number of links searched
-    println!("{:#?}", seeker.searched.len());
-
-    // Print the number of links in the queue
-    println!("On the docket: {:#?}", seeker.queue.len());
 
     Ok(())
 }
