@@ -3,6 +3,7 @@
 1962.alumclass
 1967.alumclass
 1973.alumclass
+24hourchallenge
 2n
 3091
 3dgan.csail
@@ -11,15 +12,19 @@
 3dsdn.csail
 5west
 6.006.scripts
+6.148.scripts
 6.470.scripts
 6.811.scripts
 6.869.csail
 6004
 6004.csail
 6004hub.csail
+61600.csail
+6826.csail
 6858.csail
 6858submit.csail
 6a
+6s060.csail
 aacii
 aaclab
 aai
@@ -83,6 +88,7 @@ agents.media
 agile
 agile&quot
 agupubs-onlinelibrary-wiley-com.libproxy
+ahelal.scripts
 ahtt
 ai2-test.appinventor
 ai2.appinventor
@@ -102,6 +108,7 @@ airlinedataproject
 airpolicyforum
 ait
 aiti
+ajw-group
 akaspar.pages.cba
 akpia
 alana
@@ -140,10 +147,12 @@ amps-web.amps.ms
 amps-webflash.amps.ms
 amr.smart
 ams
+ams.scripts
 amsterdam.lcs
 ana-www.lcs
 ana.lcs
 analogyspace.media
+anderson-lab
 andrescampero
 anelise
 annualfund
@@ -193,6 +202,7 @@ asartori
 ase
 ashdown
 ashdownhouse
+ashford
 ashkanhh
 asianamerican
 ask
@@ -208,6 +218,7 @@ athena.dialup
 athena10
 ati
 atlas
+atlas-auth
 atlat
 atmoschem
 audit
@@ -255,6 +266,7 @@ beaverworks.ll
 beecluster.csail
 begradboard
 begradhandbook
+beingmaterial
 bej.pages.cba
 belcherlab
 belinkov
@@ -303,9 +315,11 @@ blocks.csail
 blog.civicdatadesignlab
 blogs
 blossoms
+blueprint
 blueprintlabs
 bmes.scripts
 bnc
+bone
 boning
 boojum
 bookspicker
@@ -330,14 +344,19 @@ brainop.media
 brassrat2024
 brazil
 brl
+brs
 brysonlab
+bsu
 bsu.scripts
 btp
 buildinprogress.media
+burton-conner
+burton5.scripts
 buying
 bwa
 bwsix
 c1.appinventor
+c2
 c3.llan.ll
 ca
 ca.csail
@@ -392,6 +411,7 @@ category-theory.mitpress
 catsoop
 cau
 cave
+caving
 cavs
 cba
 cbbs
@@ -432,9 +452,11 @@ cf-sustainability
 cfa.media
 cfclab
 cfg
+cfh.scripts
 cfp
 cfp.scripts
 cfpweb
+cfrp.mitpress
 cgcs
 cgh.csail
 cgr.csail
@@ -467,8 +489,10 @@ childcare
 chinasummit
 chinchia
 chinesepuzzles
+chinesewriting
 chisholmlab
 chocolate
+choreo
 chuchu
 chulheey
 ci
@@ -481,6 +505,7 @@ cisr
 cite
 citeline
 citeseer.csail
+cities.media
 citrixapps
 city.csail
 city.lcs
@@ -492,6 +517,7 @@ civic
 civicdatadesignlab
 civicdesign
 civil
+ckbaum.scripts
 classics
 classof2017
 classrooms
@@ -509,6 +535,7 @@ cloud-registration.csail
 clubsports
 cluedumps
 cml
+cmpo
 cms
 cmse-coral
 cmsw
@@ -527,9 +554,11 @@ code.appinventor
 codeforgood
 codeit
 codekitchen
+codesign
 coeus
 cognet
 cognitive-robotics.csail
+cohn
 coi
 colab
 colabradio
@@ -576,6 +605,7 @@ connected
 connection
 connection.media
 constructive-communication.media
+continuumlab
 controllers
 convergence
 convert.appinventor
@@ -617,6 +647,7 @@ cpllab.scripts
 cpls
 cpls.scripts
 cpmtl.csail
+cpw2019
 cqe
 craft-fair
 cran.csail
@@ -663,6 +694,7 @@ curricula2
 curve
 cvcl
 cvs.pdos.lcs
+cwgordon.scripts
 cwren.www.media
 cyber-ir
 cyberir
@@ -686,6 +718,7 @@ dahleh.lids
 dai.lids
 dailypass.wi
 dam-prod.media
+dam-prod2.media
 dancetroupe
 danheiserlab
 danielarus.csail
@@ -728,10 +761,12 @@ debian.csail
 deblina-sarkar
 decode
 dedon
+deepcreativity.csail
 deepempathy
 deepfakes.media
 deepfakes2021.media
 deepknitting.csail
+deeplearning
 degreeapp
 dei.mitpress
 deiactionplan
@@ -741,6 +776,7 @@ descomp.scripts
 deshpande
 design
 designforamerica
+designftw
 designx
 designxscales
 desmaraislab.scripts
@@ -785,6 +821,7 @@ dissect.csail
 distap
 distributedinnovation
 diswww
+ditto
 diversity
 divisi.media
 diymtc
@@ -818,6 +855,7 @@ drake
 dramashop
 drao.scripts
 drc
+dreaming.media
 drennan
 driverless
 drl
@@ -831,6 +869,7 @@ dspace
 dsrg.pdos.csail
 due
 duo
+duo.media
 dusp
 dusp-dev
 duspcareers
@@ -846,6 +885,7 @@ e14e15events
 e2e
 e33
 e33-productions
+e4dev
 e4e
 eaps
 eaps-www
@@ -855,6 +895,7 @@ eapsweb
 earlycareerdialogues
 eastgate
 ebics
+eburn.scripts
 ebusiness
 ec
 ecastill.scripts
@@ -877,6 +918,7 @@ edinburgh.media
 eds
 edtech
 edu-apps
+edu.xvm
 eduapps
 education
 educationgroup
@@ -888,6 +930,7 @@ eecs-newsletter
 eecs-superurop
 eecs.odl
 eecs.scripts
+eecsappsrv
 eecseduportal
 eecsfacweb
 eecsgsa
@@ -905,6 +948,7 @@ ehs-apps
 ehs-ergonomics
 ei.csail
 ekmillerlab
+elab
 electionlab
 elections
 elections-blog
@@ -926,6 +970,7 @@ emba
 emeigs
 emergency
 emergency-vent
+emeyers.scripts
 emmas-lib
 empowering.scripts
 ems
@@ -945,6 +990,7 @@ enigma.media
 ensemble
 ensemble.scripts
 entrepreneurship
+entrepreneurship-dev
 environmentalsolutions
 epicenter.media
 eqradio.csail
@@ -1004,6 +1050,7 @@ explore.appinventor
 eyebrowse.csail
 ezsleep.csail
 fab.cba
+fabbyexample.csail
 fabric-ideas
 facemem.csail
 facevoice.csail
@@ -1029,6 +1076,7 @@ fastpass
 fbw
 fcl.scripts
 feed
+felixsun.scripts
 fellowsearch.wi
 feminists
 fenway
@@ -1037,6 +1085,7 @@ fgp.wi
 fierce
 fietelab
 finalexams
+finals
 firehose
 fireroad
 firstyear
@@ -1074,6 +1123,7 @@ fraenkelhttp
 francophone
 franked
 frat
+fravel.scripts
 fredfest
 freespeech
 freightlab
@@ -1108,6 +1158,7 @@ gamit
 gan
 ganalyze.csail
 gandissect.csail
+ganseeing.csail
 gap.hcp
 garg-lab
 gaze360.csail
@@ -1132,6 +1183,7 @@ genomecore.wi
 genomicphenotyping
 genre.csail
 genx
+genyers
 geobiology
 geobiology.scripts
 geodata
@@ -1171,6 +1223,7 @@ globesmart
 gmc
 gmunu
 gn.www.media
+go.mitpress
 goglobal
 goi
 golf
@@ -1187,6 +1240,7 @@ gradrat
 graduatehousing
 graduates2020
 graduates2021
+gradx
 grandchallenge
 graphchallenge
 graphene
@@ -1198,7 +1252,9 @@ graybiel-lab
 green-group
 greengroup
 griffingroup
+grossman
 groundtruth.media
+groundwork
 groups
 groups.csail
 gsc
@@ -1235,12 +1291,15 @@ hankyang
 hanlab
 hanwei
 hardjono
+harlin.scripts
 hasts
 hasts-students.scripts
 hat
+hattongroup
 haystack.csail
 hazefree
 hazing
+hbfs-wiki.llan.ll
 hci
 hci.csail
 hcie.csail
@@ -1256,7 +1315,9 @@ help
 hemann-lab
 hemi
 heyplix.media
+hg.pdos.csail
 hh.csail
+hillel
 hirsch
 history
 hjkgrp
@@ -1278,6 +1339,7 @@ how-to-dormspam
 hqin
 hr
 hrl
+hrvatinlab.wi
 hrweb
 hs-dev
 hsi
@@ -1296,6 +1358,7 @@ hynes-lab
 hyperloop
 hyperstudio
 hyperstudio.scripts
+iap
 ibk
 ibrahimwasiq
 ic3
@@ -1319,6 +1382,7 @@ ideabank
 ideation
 identity.media
 idhr
+idhr.
 idm
 idp
 idss
@@ -1327,6 +1391,7 @@ idss2016
 idssfinance2016
 idssretail2018
 ieee.scripts
+ieeeacm
 ifc
 igem
 igutek.scripts
@@ -1377,6 +1442,7 @@ intelligencequest
 interactive
 internal.psfc
 internetpolicy
+interstitial
 intramurals
 introml
 inversecsg.csail
@@ -1412,12 +1478,14 @@ it.wi
 iteams
 itinfo
 its
+itsonus
 iwer
 jackform.pages.cba
 jacks-lab
 jadbabaie
 jaenischlab.wi
 jaguila
+jains.scripts
 jakeread.pages.cba
 jaklenecgroup
 jamesprue.pages.cba
@@ -1454,6 +1522,7 @@ jodiec.scripts
 jods.mitpress
 joe.pages.cba
 joey.www.media
+jorie.scripts
 josue
 joules
 jove.psfc
@@ -1461,12 +1530,14 @@ jpellet.pages.cba
 jsf
 jsoohoo
 jsterman.scripts
+jtl
 juanesgroup
 julia
 juliakalow
 juliets.scripts
 juncalarbelaiz
 junerzhu
+jungj.scripts
 jura.wi
 justinbc.pages.cba
 jwafs
@@ -1650,6 +1721,7 @@ livinglab
 livingmachines
 livingpink
 livingwage
+liyihua.scripts
 ll
 llevents.ll
 llk.media
@@ -1709,6 +1781,7 @@ mallapragada
 management
 manalis-lab
 maneuver-id
+manipulation
 manipulation.csail
 manufacturing
 mapping
@@ -1755,6 +1828,7 @@ mechanosynthesis
 mechatronics
 meche
 meche-ad-portal
+meche-apps
 meche-res
 meche-reservations
 mecheconnects
@@ -1763,6 +1837,7 @@ medg.csail
 media
 media-in-transition-10
 media.csail
+medialabber.media
 medical
 medlinks
 medrc
@@ -1781,6 +1856,7 @@ mercator.csail
 mercurygame.scripts
 mere
 merefs
+mers.csail
 mert.lids
 metabolomics.wi
 metalsandminerals
@@ -1834,6 +1910,7 @@ mit
 mit-amps
 mit-anomalousdata
 mit-execmba
+mit-maps.scripts
 mit-pbg
 mit-ssc.scripts
 mit.
@@ -1864,6 +1941,7 @@ mitmgmtfaculty
 mitmobius
 mitmrsec
 mitmuseum
+mitmuseumstudio
 mitnano
 mitoc
 mitoc-cag
@@ -1893,11 +1971,14 @@ mix
 ml
 ml-ems
 mlduffy.scripts
+mlinnell.scripts
 mlkscholars
 mlkscholars-dev
+mllogin.media
 mlpds
 mm
 mmehling
+mmi
 mmns.scripts
 mmp
 mnobles
@@ -1913,6 +1994,7 @@ modiano
 mods.cba
 modules
 moghs.csail
+molina.scripts
 molsimplify
 moments.csail
 momentsofinnovation
@@ -1940,7 +2022,11 @@ mtg
 mtim
 mtl
 mtl-apps
+mtl-print
+mtl-webdev
 mtl30
+mtlcad
+mtlprintsrv
 mtlresume
 mtlsites
 mtlweb
@@ -1966,6 +2052,7 @@ my
 mycard
 myconcierge
 myhousing
+myoungs.scripts
 mysite
 mysloan
 mysql.csail
@@ -2010,6 +2097,7 @@ newdigs
 newdigs-dev
 newhouse
 newmanlab
+newmech
 newmed.media
 newmtg
 news
@@ -2045,9 +2133,11 @@ nlp.csail
 nms.csai
 nms.csail
 nms.lcs
+nnf
 nomas
 nominate
 norway.alumclub
+novartis-mit
 novels
 now
 nrl
@@ -2063,6 +2153,7 @@ nuclearweaponsedproj
 nudot
 numenor
 nurop.scripts
+nuwiki.media
 o2s.csail
 oastories
 occult
@@ -2106,6 +2197,7 @@ ombuds
 ombudsoffice
 ome
 ome-mentoring
+ome-r1
 omeintranet
 omniedulab
 onboarding
@@ -2122,6 +2214,7 @@ open.csail
 openag.media
 opencoral
 opendoclab
+opendocumentarylab
 openfab
 openlearning
 openlearning-dev
@@ -2132,12 +2225,14 @@ openocean.media
 openpds.media
 opera-beta.media
 opera.media
+opportunity
 optml
 orbit
 orbit-auth
 orc
 orcid
 org.libproxy
+organicretreat
 orgchart
 orientation
 oropeza
@@ -2161,8 +2256,11 @@ oxygen.lcs
 p3i.csail
 pablorf
 pact
+pag.csail
 pag.lcs
+pagelab.wi
 pages.cba
+pahlavan
 pallas
 palomagr
 panhel
@@ -2186,10 +2284,12 @@ peer2peer
 peerears
 people.csail
 people.lids
+people.media
 peoplefluent
 pergatory
 periklis
 peris
+perms.media
 persci
 perth.media
 pgim.csail
@@ -2274,6 +2374,8 @@ ppd.csail
 ppm.csail
 ppn.csail
 praneeth
+prather-server
+prathergroup
 prepared
 president
 presidentsrewardsrecog
@@ -2375,6 +2477,7 @@ realestateinnovationlab
 realm
 reap
 reap-sloan-dev
+rebentisch
 rechamp.media
 reconfignets.csail
 reddienlab.wi
@@ -2386,6 +2489,7 @@ registrar
 registration
 registration.csail
 regressions
+reimhyp.media
 relate
 relation.csail
 remarksonnoam.mitpress
@@ -2400,6 +2504,7 @@ researchslam
 resenv.media
 resil
 resilient-enterprise
+resilserv
 resonance
 resources
 responsible
@@ -2413,6 +2518,7 @@ rfpose.csail
 rfpose3d.csail
 rfrazer.scripts
 rheaply
+rhino.csail
 rhodeisland.alumclub
 rin.csail
 risingstars.eecs
@@ -2441,6 +2547,7 @@ robotics.csail
 robots
 robots.media
 rocketry
+rolesapp
 romanstocker.scripts
 room_res.phpmycard
 roost
@@ -2461,12 +2568,14 @@ rutledgegroup
 rvsn.csail
 rwelsch.scripts
 rwf
+s-p
 s3tec
 saa
 sadoway
 safepaths
 sailing
 sain.csail
+sakata
 sambergconferencecenter
 samsonlab
 sana
@@ -2488,6 +2597,7 @@ scale
 scale-connect
 scales
 scalingstem
+scansite4
 scattering
 sceneparsing.csail
 scenephys.csail
@@ -2497,6 +2607,7 @@ schoenberg.media
 schoi
 scholvin.scripts
 school-of-engineering-faculty-search
+schrockgroup
 schuh
 science
 sciencehub
@@ -2550,12 +2661,14 @@ semxxi-dev
 sense
 senseable
 senstextile.csail
+senthil
 sept
 sept2014
 sequestration
 sertac.scripts
 server
 sesame
+set-up
 setg
 sevir
 sfs
@@ -2566,6 +2679,7 @@ shandonhart
 shape2prog.csail
 shapehd.csail
 shared-interest.csail
+sharepoint
 shass
 shea
 sheffi
@@ -2577,12 +2691,14 @@ shopmitprd
 shortprograms
 shoulderslab
 shpe
+shraayai.scripts
 shreyasaxena
 shuguang.pages.cba
 sicp-s1
 sicp-s3
 sicp.csail
 siderius.lids
+sidpac
 signal
 signal-kinetics.media
 signup
@@ -2641,14 +2757,17 @@ solar-cars.scripts
 solid
 solve
 songhan
+sonification.dhlab
 soulstrong
 sound-of-pixels.csail
 sound-track.csail
 sound.csail
 sound.media
+sounding
 soundnet.csail
 southtexas.alumclub
 space
+space-dev
 space-live
 space2sea
 spacecats
@@ -2665,10 +2784,12 @@ spi
 spin.media
 spinning-arts
 spl
+sponsored-accounts
 sportcast
 spotlight
 spouses
 spranger-lab
+springcareerfair
 sps
 sps.scripts
 spvnas
@@ -2738,6 +2859,7 @@ subplan
 suessgroup
 summerapp
 summersession
+summerwash
 summit.appinventor
 summons
 sun360
@@ -2763,6 +2885,7 @@ sutd
 svn.csail
 svn.pdos.csail
 swagergroup
+swarm.csail
 swartz-documents
 swartz-report
 swartz-review
@@ -2775,6 +2898,7 @@ symbiosis2016.media
 synapse
 synbio
 synoptic
+synth.media
 systemarchitect
 systems
 systemsthatlearn
@@ -2801,6 +2925,7 @@ teachermoments
 teachingexcellence
 teachremote
 tech
+techandsocialchange
 techblogs
 techcash
 techlink
@@ -2814,6 +2939,7 @@ tei.media
 teji
 termplan
 terrascope
+terrerlab
 tess
 testarne.www.media
 tetazoo.scripts
@@ -2830,6 +2956,7 @@ theater
 theaterarts
 thecenter
 thelen
+themove
 theory.csail
 theory.lcs
 thereader.mitpress
@@ -2865,6 +2992,7 @@ toflow.csail
 together
 tohme
 tolman
+tomova.scripts
 tonegawalab
 tools
 toosarva.scripts
@@ -2888,6 +3016,7 @@ tradecoin
 trancik
 trancik.scripts
 trans
+transite
 transitlab
 transmedia
 transportation
@@ -2917,6 +3046,7 @@ tunnel
 turkeyes
 twelve
 txe1-portal
+tyelab
 u2ap.scripts
 ua
 ua-sustain
@@ -2965,6 +3095,7 @@ vdi
 vep
 vera
 vets
+vi-a
 video
 video.odl
 vijayg
@@ -3001,6 +3132,7 @@ wafl14
 walkerlab
 wangcheng
 washingtondc.alumclub
+waste2place
 waterclub
 waterclub.scripts
 wavescope.csail
@@ -3021,6 +3153,7 @@ webcast
 webcast.amps.ms
 webcast.media
 webdns.csail
+weblab
 weblogs.media
 webmail
 webmail.csail
@@ -3055,6 +3188,7 @@ wi
 wi-inside.wi
 wic.scripts
 wids.lids
+wiki.media
 wiki.mers.csail
 wikis
 wikum.csail
@@ -3083,22 +3217,26 @@ working-green
 workinggreen
 workofthefuture
 workofthefuturecongress
+wqian94.scripts
 writing
 writingprocess
 wserv
 wspt
 wtp
 www
+www-chronicle-com.libproxy
 www-ctp
 www-eaps
 www-eecs
 www-gpsg
+www-hkn
 www-internal.psfc
 www-jove-com.libproxy
 www-math
 www-me
 www-mitpress
 www-mtl
+www-nature-com.libproxy
 www-oed-com.libproxy
 www-paoc
 www-prod.media
@@ -3150,9 +3288,11 @@ www.gas-turbine-lab
 www.gcws
 www.gear
 www.guolab
+www.hackingvr
 www.haystack
 www.icsr
 www.ikim
+www.impact-alliance
 www.iquise
 www.iris.csail
 www.jclinic
@@ -3165,6 +3305,7 @@ www.laublab
 www.lcs
 www.lcs.
 www.lids
+www.ligo
 www.ll
 www.lmrt
 www.lns
@@ -3172,6 +3313,7 @@ www.lorenz
 www.marelli
 www.masicgroup
 www.mcgeelab
+www.meche
 www.medg.lcs
 www.media
 www.medical
@@ -3181,9 +3323,13 @@ www.mitport
 www.mobilityinitiative
 www.mtl
 www.nanomedicine
+www.nature.com.libproxy
 www.nchpc.lcs
+www.necap
 www.neurostat
 www.nms.lcs
+www.nsbe
+www.oecd-ilibrary.org.libproxy
 www.oed.com.libproxy
 www.onelab
 www.openspace
@@ -3206,10 +3352,12 @@ www.regina.csail
 www.rle
 www.romangroup
 www.scc
+www.sciencedirect.com.libproxy
 www.sciencemag.org.libproxy
 www.sds.lcs
 www.sloan-hbc
 www.sls.csail
+www.ssolomongroup
 www.sul
 www.swiss.ai
 www.teampaccc
@@ -3218,6 +3366,7 @@ www.thecenter
 www.thrive-eecs
 www.tilclimate
 www.tns.lcs
+www.topad
 www.tothemoon
 www.transitlab
 www.trust
@@ -3240,6 +3389,7 @@ xte
 xvm
 xvm.scripts
 xyz
+yaffelab
 yamashitalab.wi
 yangon.csail
 yangtan
@@ -3257,6 +3407,7 @@ youps.csail
 yoursite
 youtomb
 yushen.scripts
+zambezi
 zcom
 zelda.lids
 zeppola
@@ -3265,6 +3416,7 @@ zeyuchrispeng
 zfredin.pages.cba
 zhanggroup
 zhao
+zhou2011.xvm
 zijiezhou
 ziw
 ziweili.scripts

@@ -118,7 +118,7 @@ impl Seeker {
             let count = self.searches.entry(domain.into()).or_insert(0);
 
             // If the count is greater than 200, `continue`
-            if *count > 200 {
+            if *count > 300 {
                 continue;
             }
 
@@ -192,7 +192,7 @@ fn filter(url: &Url) -> bool {
     let re = regex!(r"(?x)
     calendar|day|year|               # Avoid calendars
 
-    (solve|kb|wikis)\.mit\.edu       # Lots of sublinks, no new links
+    (solve|kb|wikis|fmurray)\.mit\.edu       # Lots of sublinks, no new links
     ");
 
     // Only search mit sites
@@ -200,7 +200,7 @@ fn filter(url: &Url) -> bool {
         // Can't search things like mailto or ftp
         || !url.scheme().contains("http")
 
-        // Check a bunch of extensions, excluse some sites
+        // Check a bunch of extensions, exclude some sites
         // We don't want it to match
         || re.is_match(str)
     {
