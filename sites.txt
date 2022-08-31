@@ -1015,6 +1015,7 @@ esg
 esi
 esp
 esp-mail
+esp.scripts
 espalier-demo.csail
 esrdc
 essg
