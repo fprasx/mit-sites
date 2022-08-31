@@ -155,6 +155,7 @@ analogyspace.media
 anderson-lab
 andrescampero
 anelise
+anime
 annualfund
 annualgiving
 annualreport.wi
@@ -2730,6 +2731,7 @@ sivelab.wi
 sixweb
 skiing
 skoltech
+skydive
 slac.csail
 sleep.csail
 slevi1
@@ -2921,6 +2923,7 @@ tak.wi
 talkingdrum
 tang
 tangible.media
+tango
 tansongchen
 tasan
 tatacenter
