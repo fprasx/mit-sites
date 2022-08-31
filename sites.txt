@@ -2438,6 +2438,9 @@ pulse.media
 pulse.wi
 punya.appinventor
 puppylab
+puzzle.scripts
+puzzles
+puzzletron
 pv
 pvcnn
 pvnas
@@ -3406,6 +3409,7 @@ yangtan
 yanh.scripts
 yawh
 ycohen.scripts
+yewlabs
 yhzhang
 yildizgroup
 yilmaz-lab
