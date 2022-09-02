@@ -1859,6 +1859,7 @@ members.media
 memdemo.csail
 memorability.csail
 memsi
+mens-ult
 mercator.csail
 mercurygame.scripts
 mere
@@ -3436,3 +3437,5 @@ ziw
 ziweili.scripts
 zlab
 zoommaps.csail
+centrifugues
+mitsfs
