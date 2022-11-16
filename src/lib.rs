@@ -118,7 +118,7 @@ impl Seeker {
             let count = self.searches.entry(domain.into()).or_insert(0);
 
             // If the count is greater than 200, `continue`
-            if *count > 300 {
+            if *count > 400 {
                 continue;
             }
 

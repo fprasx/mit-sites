@@ -16,7 +16,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     let mut seeker = Seeker::new(root);
 
     // Go for 20_000 cycles
-    for i in 0..200_000 {
+    for i in 0..500_000 {
         match seeker.execute().await {
             Ok(_) => continue,
             Err(e) => error!("{i:4}: {e}"),
