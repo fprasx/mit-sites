@@ -66,6 +66,7 @@ adminconnect
 admissions
 admissions.media
 admitted
+adphi
 adrianld
 adsc
 adt
@@ -2392,6 +2393,7 @@ parking
 parsons
 patricia.pages.cba
 payingforcures
+pcd
 pda
 pdm2.media
 pdos.csail
@@ -2542,6 +2544,7 @@ psfcwww2.psfc
 pslam
 ptr.csail
 pts
+public.mitx
 publications.csail
 publicdisputes
 pubs.acs.org.libproxy
@@ -3072,6 +3075,7 @@ tang
 tangible.media
 tango
 tansongchen
+tarkovsky
 tasan
 tatacenter
 tbond.scripts
@@ -3093,6 +3097,7 @@ techx
 tedlab
 tei.media
 teji
+tep
 termplan
 terrascope
 terrerlab
@@ -3604,8 +3609,3 @@ ziw
 ziweili.scripts
 zlab
 zoommaps.csail
-adphi
-tep
-public.mitx
-tarkovsky
-pcd
