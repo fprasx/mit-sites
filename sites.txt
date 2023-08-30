@@ -538,6 +538,7 @@ chuchu
 chulheey
 ci
 cics
+cilk
 cima-lab
 ciml.media
 cis
@@ -880,6 +881,8 @@ divisi.media
 diymtc
 d-lab
 d-lab-dev
+dl.www.media
+dlarsen.scripts
 dlc-theme
 dlg
 dltoolkit
@@ -1191,6 +1194,7 @@ fraenkelhttp
 fraenkel-nsf.csbi
 francophone
 franked
+frap.csail
 frat
 fravel.scripts
 fredfest
@@ -1612,6 +1616,7 @@ jods.mitpress
 joe.pages.cba
 joey.www.media
 jorie.scripts
+joseph_c.scripts
 josue
 joules
 jove.psfc
@@ -1821,6 +1826,7 @@ ll
 llevents.ll
 llk.media
 llmpf.ll
+llp
 llptechsec
 lmp
 lmrt
@@ -2185,6 +2191,7 @@ nb1
 nchoucri
 ncstrl
 nda
+neboat
 necap
 necstlab
 nedivilab
@@ -2319,6 +2326,7 @@ ome
 omeintranet
 ome-mentoring
 ome-r1
+omeintranet
 omni
 omniedulab
 onboarding
@@ -2730,6 +2738,7 @@ sap-resources
 saprooms
 sara
 sasilab
+satori-portal
 sauvignon
 savetfp
 saxelab
@@ -3285,6 +3294,7 @@ visions.media
 visitors
 visitors-admin
 vismod.media
+visor
 visualdynamics.csail
 visualizingcities-dusp
 visualizingcultures
